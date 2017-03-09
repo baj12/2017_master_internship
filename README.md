@@ -13,5 +13,8 @@ Have to get the latest version of this file in a csv file : ftp://ftp.ncbi.nlm.n
 
 See ```python build_insectGenomesInfos.py -h``` for more information
 
+#### Notes
+*We have to curate one of our lines by hand because it seems that in Taxonomy ```tax_id = 48709``` doesn't have an Order Rank*
+
 
 ## 3DModeling_project
