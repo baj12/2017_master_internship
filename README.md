@@ -10,7 +10,8 @@
 *This script is used to build a csv file which get all information 
 on insect genomes (species name, family name and id, order name and id, acession number)
 Have to get the latest version of this file in a csv file : ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt*
-See ```python build_insectGenomesInfos.py -h``` for more informations
+
+See ```python build_insectGenomesInfos.py -h``` for more information
 
 
 ## 3DModeling_project
