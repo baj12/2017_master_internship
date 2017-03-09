@@ -16,14 +16,15 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt
 
 '''
 
-import pandas as pd
+import sys
 import os
 from optparse import OptionParser
 from Bio import Entrez
+import progressbar
 
 Entrez.email = 'savandara.besse@gmail.com'
 
-
+ 	
 parser = OptionParser()
 parser.add_option("-p", "--csv_file", dest="pathcsv", default="None",
                   help="[Required] Location of the csv file containing all the data of this link: 'ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt'")
@@ -54,7 +55,8 @@ def checkIfInsect(alldata):
 	return insectDict
 
 def addData(insectDict) :
-	for key in insectDict.keys():
+	bar = progressbar.ProgressBar()
+	for key in bar(insectDict.keys()):
 		tax_id = key
 
 		handle = Entrez.efetch(db="taxonomy", id=tax_id)
@@ -62,24 +64,23 @@ def addData(insectDict) :
 
 		for index in range(len(record)) : 
 			lineage_ex = record[index]["LineageEx"] 
-			for dict in lineage_ex :
+			for Dict in lineage_ex :
 
-				if dict["Rank"] == "family" :
-					insectDict[tax_id]["family_name"] = dict["ScientificName"]
-					insectDict[tax_id]["family_id"] = dict["TaxId"]
+				if Dict["Rank"] == "family" :
+					insectDict[tax_id]["family_name"] = Dict["ScientificName"]
+					insectDict[tax_id]["family_id"] = Dict["TaxId"]
 
-				elif dict["Rank"] == "no rank" : 
-					insectDict[tax_id]["family_name"] = "N/A"
-					insectDict[tax_id]["family_id"] = "N/A"
+				if Dict["Rank"] == "order" : 
+					insectDict[tax_id]["order_name"] = Dict["ScientificName"]
+					insectDict[tax_id]["order_id"] = Dict["TaxId"]
 
+			if "family_name" not in insectDict[tax_id]:
+			    insectDict[tax_id]["family_name"] = "N/A"
+			    insectDict[tax_id]["family_id"] = "N/A"
 
-				if dict["Rank"] == "order" : 
-					insectDict[tax_id]["order_name"] = dict["ScientificName"]
-					insectDict[tax_id]["order_id"] = dict["TaxId"]
-
-				elif dict["Rank"] == "no rank" : 
-					insectDict[tax_id]["order_name"] = "N/A"
-					insectDict[tax_id]["order_id"] = "N/A"
+			if "order_name" not in insectDict[tax_id]:
+			    insectDict[tax_id]["order_name"] = "N/A"
+			    insectDict[tax_id]["order_id"] = "N/A"
 					
 		handle.close()
 
