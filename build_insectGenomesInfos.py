@@ -21,7 +21,6 @@ import os
 from optparse import OptionParser
 from Bio import Entrez
 import progressbar
-
 Entrez.email = 'savandara.besse@gmail.com'
 
  	
@@ -90,7 +89,7 @@ def addData(insectDict) :
 def createTable(insectDict):
 
 	f = open("insectGenomesInfos.csv", 'w')
-	f.write("Species id, Species name, Family id, Family name, Order id, Order name, Acession number\n")
+	f.write("Species id,Species name,Family id,Family name,Order id,Order name,Acession number\n")
 
 	id_list = ["sp_name","family_id", "family_name", "order_id", "order_name"]
 
