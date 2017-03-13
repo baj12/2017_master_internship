@@ -55,7 +55,7 @@ def checkIfInsect(alldata):
 	return insectDict
 
 def addData(insectDict) :
-	bar = progressbar.ProgressBar()
+	bar = progressbar.ProgressBar(widgets=[' [', progressbar.Timer(), '] ', progressbar.Bar(), ' (', progressbar.ETA(), ') ', ])
 	for key in bar(insectDict.keys()):
 		tax_id = key
 
@@ -83,6 +83,8 @@ def addData(insectDict) :
 			    insectDict[tax_id]["order_id"] = "N/A"
 					
 		handle.close()
+
+	return insectDict
 
 
 def createTable(insectDict):
