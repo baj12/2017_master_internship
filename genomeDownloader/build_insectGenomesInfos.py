@@ -5,7 +5,7 @@
 Author : Savandara Besse
 
 Created date : 03-08-2017
-Modified date : 03-09/2017
+Modified date : 03-16-2017
 
 Description : This script allows to create a csv file composed 
 of all the insect genomes informations with these specific columns :
@@ -22,23 +22,6 @@ from optparse import OptionParser
 from Bio import Entrez
 import progressbar
 Entrez.email = 'savandara.besse@gmail.com'
-
- 	
-parser = OptionParser()
-parser.add_option("-p", "--csv_file", dest="pathcsv", default="None",
-                  help="[Required] Location of the csv file containing all the data of this link: 'ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt'")
-
-(options, args) = parser.parse_args()
-
-pathcsv = options.pathcsv
-
-if pathcsv == "None":
-	print ("Maybe have you forget to download your data? \n -h for more information")
-	sys.exit(1)
-
-f = open(pathcsv)
-alldata = [x.strip() for x in f.readlines()]
-f.close()
 
 def checkIfInsect(alldata):
 	insectDict = {}
@@ -115,6 +98,22 @@ def createTable(insectDict):
 
 
 # Main
+
+parser = OptionParser()
+parser.add_option("-p", "--csv_file", dest="pathcsv", default="None",
+                  help="[Required] Location of the csv file containing all the data of this link: 'ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt'")
+
+(options, args) = parser.parse_args()
+
+pathcsv = options.pathcsv
+
+if pathcsv == "None":
+	print ("Maybe have you forget to download your data? \n -h for more information")
+	sys.exit(1)
+
+f = open(pathcsv)
+alldata = [x.strip() for x in f.readlines()]
+f.close()
 
 insectDict = checkIfInsect(alldata)
 addData(insectDict)
