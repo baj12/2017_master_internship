@@ -4,7 +4,7 @@
 Author: Savandara Besse
 
 Created date: 03-17-2017
-
+Modified date: 03-20-2017 
 Description: 
 
 Skipped genomes which are already know to have the Oskar sequence
