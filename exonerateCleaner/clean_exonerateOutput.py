@@ -1,14 +1,12 @@
 #!/usr/bin/env python 
 
 '''
-
 Author: Savandara Besse
 
 Created date: 03-16-2017
 Modified date: 
 
 Description: This script cleans the gff output file from Exonerate
-
 '''
 
 import sys
