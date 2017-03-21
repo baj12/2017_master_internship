@@ -48,7 +48,6 @@ def build_cmdToRun(genomeFolder, oskarGenomes):
 	cmdToRun = []
 	genomeList = []
 	genomeidFolder = os.listdir(genomeFolder)
-
 	for folder in genomeidFolder :
 		path = os.path.join(genomeFolder, folder)
 		if not os.path.isfile(path) :
@@ -73,7 +72,7 @@ def build_cmdToRun(genomeFolder, oskarGenomes):
 			for genome in oskarGenomes :
 				found = re.findall(r'(^[A-Z]{3}_[0-9]{9}).[0-9]{1}', genome)[0]
 				if hasToBeFound == found :
-					print(current + " already known to have Oskar sequence")
+					print(i, current + " already known to have Oskar sequence")
 				else :
 					cmdToRun.append(add_Command(genomeFolder, folder, current, []))
 
@@ -158,6 +157,5 @@ except:
 
 oskarGenomes = skipped_Genomes(genomeSearch)
 genomeList, cmdToRun = build_cmdToRun(genomeFolder, oskarGenomes)
-print(i)
 run_AllCmd(cmdToRun)
 remove_Genome(genomeFolder, genomeList)
