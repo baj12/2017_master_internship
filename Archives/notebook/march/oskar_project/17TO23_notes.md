@@ -44,4 +44,7 @@
 
 # Wednesday, March 22nd
 
+## In progress
+- Reboot Exonerate pipeline (for using Accounting)
+
 ## Done
