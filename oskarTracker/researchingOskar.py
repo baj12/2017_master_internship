@@ -95,7 +95,7 @@ def run_AllCmd(cmdToRun, proteinDatabase) :
 		jobID += 1
 
 	f = open('SLURM_exonerate.sh','w')
-	f.write('#!/bin/bash\n#SBATCH -J tophat\n#SBATCH --mem 2800\n#SBATCH --time 03:00\n#SBATCH -n 1\n#SBATCH -e log_exonerate.err\n\n')
+	f.write('#!/bin/bash\n#SBATCH -J tophat\n#SBATCH --mem 2800\n#SBATCH -n 1\n#SBATCH -e log_exonerate.err\n\n')
 	f.write('\n\nbash {}/SLURM/exonerate_"${{SLURM_ARRAY_TASK_ID}}".sh'.format(os.path.abspath('.')))
 	f.write('\n\n# To run please execute\n# sbatch --array=1-{} SLURM_exonerate.sh'.format(len(cmdToRun)))
 	f.close()
