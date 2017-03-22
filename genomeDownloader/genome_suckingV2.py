@@ -18,7 +18,7 @@ import os
 from optparse import OptionParser
 
 parser = OptionParser()
-parser.add_option("-p", "--scv_file", dest="pathcsv", default="None",
+parser.add_option("-p", "--csv_file", dest="pathcsv", default="None",
                   help="[Required] Location of the csv file containing all the genomes ID in the collumn named 'Accession number'")
 parser.add_option("-o", "--genomePath", dest="genomePath", default="None",
                   help="[Required] Location of the directory where the genomes will be downloaded")
