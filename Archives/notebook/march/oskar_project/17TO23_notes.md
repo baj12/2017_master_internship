@@ -40,3 +40,8 @@
 
 ## To do
 - Test EVM with data from NCBI
+
+
+# Wednesday, March 22nd
+
+## Done
