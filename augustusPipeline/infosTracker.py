@@ -19,26 +19,21 @@ import pandas as pd
 import re
 from optparse import OptionParser
 
-def buildDataFrame(pathcsv):
-	dfi = pd.read_csv(pathcsv)
-	df = dfi.sort_values(["Order id", "Family id"], ascending=[0,1])[['Order name', 'Family name', 'Species name', 'Accession number']]
-	df = df.set_index('Species name')
-	
-	return df
-
 
 def makeDecisions(infoDict, currentG):
+
+	print(currentG+ " tracking information in progress")
 
 	if infoDict[currentG]["Protein annotations"] == 'Yes' :
 		infoDict[currentG]["TO DO"] = 'Find Oskar'
 	elif infoDict[currentG]["GeneBank annotations"] == 'Yes':
 		infoDict[currentG]["TO DO"] = 'Use Augustus'
-	elif infoDict[currentG]["GeneBank annotations"] == 'No' and (infoDict[currenG]["GFF3 annotations"] == 'Yes' and infoDict[currenG]["Genome Fasta file"] == 'Yes'):
+	elif infoDict[currentG]["GeneBank annotations"] == 'No' and (infoDict[currentG]["GFF3 annotations"] == 'Yes' and infoDict[currentG]["Genomic fasta file"] == 'Yes'):
 		infoDict[currentG]["TO DO"] = 'Convert into GeneBank file and use Augustus!'
-	elif infoDict[currentG]["GFF3 annotations"] == 'No' and infoDict[currenG]["Genomic fasta file"] == 'Yes':
+	elif infoDict[currentG]["GFF3 annotations"] == 'No' and infoDict[currentG]["Genomic fasta file"] == 'Yes':
 		infoDict[currentG]["TO DO"] = 'Use GeneMark + Exonerate + Evidence Modeller + Augustus'
 	elif infoDict[currentG]["Genomic fasta file"] == 'No' :
-		infoDict[currentG]["TO DO"] = 'Should look à the folder '+ currentG
+		infoDict[currentG]["TO DO"] = 'Should look to the folder '+ currentG
 	else : 
 		infoDict[currentG]["TO DO"] = "Good question ..."
 
@@ -59,7 +54,7 @@ def getGenomeInfos(genomeFolder, folder, currentG, GCA_number, infoDict):
 			infoDict[currentG]['GeneBank annotations'] = 'Yes'
 		if '_genomic.gff.gz' in info :
 			infoDict[currentG]['GFF3 annotations'] = 'Yes'
-		if '_genomic.fna.gz' in info :
+		if '_genomic.fna' in info :
 			infoDict[currentG]['Genomic fasta file'] = 'Yes'
 		if '_rna.fna.gz' in info :
 			infoDict[currentG]['RNA fasta file'] = 'Yes'
@@ -80,11 +75,14 @@ def getGenomeInfos(genomeFolder, folder, currentG, GCA_number, infoDict):
 	
 
 
-def getAllGenomesInfos(genomeFolder, df) :
+def getAllGenomesInfos(pathcsv, genomeFolder) :
+	df = pd.read_csv(pathcsv)
+	df_i = df.sort_values(["Order id", "Family id"], ascending=[0,1])[['Order name', 'Family name', 'Species name', 'Accession number']]
+
 	allGenomesInfos = []
 
 	genomeidFolder = os.listdir(genomeFolder)
-	for folder in [genomeidFolder[0],genomeidFolder[42],genomeidFolder[200]] :
+	for folder in genomeidFolder :
 		path = os.path.join(genomeFolder, folder)
 		if not os.path.isfile(path) :
 			genomeVersion = os.listdir(path)
@@ -103,15 +101,56 @@ def getAllGenomesInfos(genomeFolder, df) :
 
 			hasToBeFound = re.findall(r'(^[A-Z]{3}_[0-9]{9}.[0-9]{1})', current)[0]
 
-			for genome in df['Accession number'] :
+			for genome in df_i['Accession number'] :
 				regExpr = re.findall(r'^([A-Z]{3}_[0-9]{9}.[0-9]{1})', genome)[0]
 				if hasToBeFound == regExpr :
 					allGenomesInfos.append(getGenomeInfos(genomeFolder, folder, current, hasToBeFound, {}))
 
-	return allGenomesInfos
+	print("Traking information terminated")
+
+	return df_i, allGenomesInfos
 
 
-def buildnewDataframe(infoDict, df)
+def buildnewDataframe(allGenomesInfos, df_i):
+	inf_df = []
+
+	for elem in allGenomesInfos : 
+		for key in elem.keys():
+			inf_df.append(elem[key])
+
+	df_m = pd.DataFrame(inf_df)
+	df_m = df_m[['Accession number','Protein annotations','GeneBank annotations','GFF3 annotations','Genomic fasta file','RNA fasta file','TO DO']]
+
+	df_f = pd.merge(df_i, df_m, how='inner', on=['Accession number'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
+	df_f = df_f.set_index('Species name')
+
+	return df_f
+	
+def createCsvFile(df_f):
+	
+	f = open('pipelineGuide.csv','w', encoding="utf-8")
+
+	f.write("Species name,")
+	for column in df_f.columns:
+		if column == "TO DO":
+			f.write(column+'\n')
+		else :
+			f.write(column+',')
+
+	for species in df_f.index:
+		f.write(species+',')
+		for column in df_f.columns:
+			if column == 'TO DO':
+				f.write(df_f[column][species]+'\n')
+			else:
+				f.write(df_f[column][species]+',')
+
+	f.close()
+
+
+
+
+
 
 # Main
 
@@ -126,6 +165,6 @@ parser.add_option("-g", "--genome_folder", dest="genomeFolder", default="None",
 pathcsv = options.pathcsv
 genomeFolder = options.genomeFolder
 
-insectDataFrame = buildDataFrame(pathcsv)
-result = getAllGenomesInfos(genomeFolder, insectDataFrame)
-print(result)
+pre_insectDataFrame, allGenomesInfos = getAllGenomesInfos(pathcsv, genomeFolder)
+final_insectDataFrame = buildnewDataframe(allGenomesInfos, pre_insectDataFrame)
+createCsvFile(final_insectDataFrame) 
