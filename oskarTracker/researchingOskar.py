@@ -19,14 +19,6 @@ from subprocess import Popen
 import subprocess
 
 
-def skipped_Genomes(genomeSearch):
-	f = open(genomeSearch,"r")
-	oskarGenomes = [x.strip() for x in f.readlines()]
-	f.close()
-
-	return oskarGenomes
-
-
 def add_Command(genomeFolder, folder, currentG, exonerateARG):
 	print("Opening Genome: {}".format(currentG))
 
@@ -44,9 +36,14 @@ def add_Command(genomeFolder, folder, currentG, exonerateARG):
 	return exonerateARG
 
 
-def build_cmdToRun(genomeFolder, oskarGenomes):
+def build_cmdToRun(genomeSearch, genomeFolder):
 	cmdToRun = []
 	genomeList = []
+
+	f = open(genomeSearch,"r")
+	oskarGenomes = [x.strip() for x in f.readlines()]
+	f.close()
+
 	genomeidFolder = os.listdir(genomeFolder)
 	for folder in genomeidFolder :
 		path = os.path.join(genomeFolder, folder)
@@ -129,6 +126,6 @@ if proteinDatabase == "None":
 	print("proteinDatabase file must be provided")
 	sys.exit(1)
 
-oskarGenomes = skipped_Genomes(genomeSearch)
-genomeList, cmdToRun = build_cmdToRun(genomeFolder, oskarGenomes)
+
+genomeList, cmdToRun = build_cmdToRun(genomeSearch, genomeFolder)
 run_AllCmd(cmdToRun, proteinDatabase)
