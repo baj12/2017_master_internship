@@ -4,7 +4,7 @@
 Author: Savandara Besse
 
 Created date: 03-21-2017
-Modified date: 03-22-2017 
+Modified date: 03-23-2017 
 Description: 
 Create a csv file where can see if a genome have file which 
 can help in the several pipelines : 
@@ -140,8 +140,6 @@ def buildpipelineGuide(allGenomesInfos, df_i):
 
 	df_f = pd.merge(df_i, df_m, how='inner', on=['Accession number'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
 	df_f = df_f.set_index('Species name')
-
-	print(df_f.groupby(['TO DO']).count())
 	
 	f = open('pipelineGuide.csv','w', encoding="utf-8")
 
