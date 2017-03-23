@@ -24,25 +24,44 @@ def makeDecisions(infoDict, currentG):
 
 	print(currentG+ " tracking information in progress")
 
-	if infoDict[currentG]["Protein annotations"] == 'Yes' :
-		infoDict[currentG]["TO DO"] = 'Find Oskar'
-	elif infoDict[currentG]["GeneBank annotations"] == 'Yes':
-		infoDict[currentG]["TO DO"] = 'Use Augustus'
-	elif infoDict[currentG]["GeneBank annotations"] == 'No' and (infoDict[currentG]["GFF3 annotations"] == 'Yes' and infoDict[currentG]["Genomic fasta file"] == 'Yes'):
-		infoDict[currentG]["TO DO"] = 'Convert into GeneBank file and use Augustus!'
-	elif infoDict[currentG]["GFF3 annotations"] == 'No' and infoDict[currentG]["Genomic fasta file"] == 'Yes':
-		infoDict[currentG]["TO DO"] = 'Use GeneMark + Exonerate + Evidence Modeller + Augustus'
-	elif infoDict[currentG]["Genomic fasta file"] == 'No' :
-		infoDict[currentG]["TO DO"] = 'Should look to the folder '+ currentG
-	else : 
-		infoDict[currentG]["TO DO"] = "Good question ..."
+	if infoDict[currentG]["Oskar presence"] == 'N/A' :
+		if infoDict[currentG]["Protein annotations"] == 'Yes' :
+			infoDict[currentG]["TO DO"] = 'Find Oskar'
+		elif infoDict[currentG]["GeneBank annotations"] == 'Yes':
+			infoDict[currentG]["TO DO"] = 'Use Augustus'
+		elif infoDict[currentG]["GeneBank annotations"] == 'No' and (infoDict[currentG]["GFF3 annotations"] == 'Yes' and infoDict[currentG]["Genomic fasta file"] == 'Yes'):
+			infoDict[currentG]["TO DO"] = 'Convert into GeneBank file and use Augustus!'
+		elif infoDict[currentG]["GFF3 annotations"] == 'No' and infoDict[currentG]["Genomic fasta file"] == 'Yes':
+			infoDict[currentG]["TO DO"] = 'Use GeneMark + Exonerate + Evidence Modeller + Augustus'
+		elif infoDict[currentG]["Genomic fasta file"] == 'No' :
+			infoDict[currentG]["TO DO"] = 'Should look to the folder '+ currentG
+		else : 
+			infoDict[currentG]["TO DO"] = "Good question ..."
+
+	elif infoDict[currentG]["Oskar presence"] == 'Yes' :
+		infoDict[currentG]["TO DO"] = 'Nothing to do'
 
 	return infoDict
 
 
-def getGenomeInfos(genomeFolder, folder, currentG, GCA_number, infoDict):
+def getGenomeInfos(genomeSearch, genomeFolder, folder, currentG, GCA_number, infoDict):
+	f = open(genomeSearch,"r")
+	oskarGenomes = [x.strip() for x in f.readlines()]
+	f.close()
+
 	infoDict[currentG] = {}
 	infoDict[currentG]['Accession number'] = GCA_number
+
+	hasToBeChecked = re.findall(r'(^[A-Z]{3}_[0-9]{9}).[0-9]{1}', currentG)[0]
+
+	for genome in oskarGenomes :
+		checked = re.findall(r'(^[A-Z]{3}_[0-9]{9}).[0-9]{1}', genome)[0]
+		if hasToBeChecked == checked :
+			print("Oskar already identified in "+ hasToBeChecked)
+			infoDict[currentG]['Oskar presence'] = 'Yes'
+	
+	if 'Oskar presence' not in infoDict[currentG]:
+		infoDict[currentG]['Oskar presence'] = 'N/A'
 			
 	path = os.path.join(genomeFolder, folder, currentG)
 	allInfos = os.listdir(path)
@@ -71,8 +90,6 @@ def getGenomeInfos(genomeFolder, folder, currentG, GCA_number, infoDict):
 		infoDict[currentG]['RNA fasta file'] = 'No'
 
 	return makeDecisions(infoDict, currentG)
-
-	
 
 
 def getAllGenomesInfos(pathcsv, genomeFolder) :
@@ -104,14 +121,14 @@ def getAllGenomesInfos(pathcsv, genomeFolder) :
 			for genome in df_i['Accession number'] :
 				regExpr = re.findall(r'^([A-Z]{3}_[0-9]{9}.[0-9]{1})', genome)[0]
 				if hasToBeFound == regExpr :
-					allGenomesInfos.append(getGenomeInfos(genomeFolder, folder, current, hasToBeFound, {}))
+					allGenomesInfos.append(getGenomeInfos(genomeSearch, genomeFolder, folder, current, hasToBeFound, {}))
 
 	print("Traking information terminated")
 
 	return df_i, allGenomesInfos
 
 
-def buildnewDataframe(allGenomesInfos, df_i):
+def buildpipelineGuide(allGenomesInfos, df_i):
 	inf_df = []
 
 	for elem in allGenomesInfos : 
@@ -119,14 +136,12 @@ def buildnewDataframe(allGenomesInfos, df_i):
 			inf_df.append(elem[key])
 
 	df_m = pd.DataFrame(inf_df)
-	df_m = df_m[['Accession number','Protein annotations','GeneBank annotations','GFF3 annotations','Genomic fasta file','RNA fasta file','TO DO']]
+	df_m = df_m[['Accession number','Oskar presence','Protein annotations','GeneBank annotations','GFF3 annotations','Genomic fasta file','RNA fasta file','TO DO']]
 
 	df_f = pd.merge(df_i, df_m, how='inner', on=['Accession number'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
 	df_f = df_f.set_index('Species name')
 
-	return df_f
-	
-def createCsvFile(df_f):
+	print(df_f.groupby(['TO DO']).count())
 	
 	f = open('pipelineGuide.csv','w', encoding="utf-8")
 
@@ -141,30 +156,41 @@ def createCsvFile(df_f):
 		f.write(species+',')
 		for column in df_f.columns:
 			if column == 'TO DO':
-				f.write(df_f[column][species]+'\n')
+				f.write(str(df_f[column][species])+'\n')
 			else:
-				f.write(df_f[column][species]+',')
+				f.write(str(df_f[column][species])+',')
 
 	f.close()
-
-
-
-
 
 
 # Main
 
 parser = OptionParser()
-parser.add_option("-p", "--pathcsv", dest="pathcsv", default="None",
-                  help="[Required] Location of the csv file curated_InsectGenomesInfos.csv")
 parser.add_option("-g", "--genome_folder", dest="genomeFolder", default="None",
                   help="[Required] Location of the folder containing all the genomes")
+parser.add_option("-p", "--pathcsv", dest="pathcsv", default="None",
+                  help="[Required] Location of the csv file curated_InsectGenomesInfos.csv")
+parser.add_option("-s", "--skipped_genomes", dest="genomeSearch", default="None",
+                  help="[Required] Location of the file which contains all the genomes where we already know that Oskar gene exist")
 
 (options, args) = parser.parse_args()
 
-pathcsv = options.pathcsv
 genomeFolder = options.genomeFolder
+pathcsv = options.pathcsv
+genomeSearch = options.genomeSearch
+
+
+if genomeFolder == "None":
+	print("Genome Folder must be provided")
+	sys.exit(1)
+
+if pathcsv == "None":
+	print("curated_InsectGenomesInfos.csv file must be provided")
+	sys.exit(1)
+
+if genomeSearch == "None":
+	print("GenomeSearch file must be provided")
+	sys.exit(1)
 
 pre_insectDataFrame, allGenomesInfos = getAllGenomesInfos(pathcsv, genomeFolder)
-final_insectDataFrame = buildnewDataframe(allGenomesInfos, pre_insectDataFrame)
-createCsvFile(final_insectDataFrame) 
+buildpipelineGuide(allGenomesInfos, pre_insectDataFrame)
