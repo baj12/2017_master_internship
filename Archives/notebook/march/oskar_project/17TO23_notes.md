@@ -33,18 +33,18 @@
 # Tuesday, March 21st
 
 ## Done
-- [x] Have launched Exonerate on 200 genomes (hope that is works!)
+- [x] Have launched Exonerate on 200 genomes 
 
 ## In progress
 - Create a file which contain infos from all annotations genomes 
-
-## To do
-- Test EVM with data from NCBI
 
 
 # Wednesday, March 22nd
 
 ## In progress
-- Reboot Exonerate pipeline (for using Accounting)
+- Reboot Exonerate pipeline (still running on the first 8 processus)
+- Work on `infoTracker.py`
 
-## Done
+## To do
+- Finish `infoTracker.py`
+- Test EVM with data from NCBI
