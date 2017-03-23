@@ -90,7 +90,7 @@ def run_AllCmd(cmdToRun, proteinDatabase) :
 		for genome in cmd.keys() : 
 			f = open('./SLURM/exonerate_{}.sh'.format(jobID),'w')
 			f.write('#!/bin/bash\n#SBATCH \n\n')
-			f.write('\n/mirror/bin/exonerate-2.2.0/bin/exonerate --query ' +proteinDatabase+ ' --target ' +cmd[genome]['$1']+ ' --model protein2genome --percent 50 --showtargetgff yes --showalignment no --showvulgar no -M 3000 \n')
+			f.write('\n/mirror/bin/exonerate-2.2.0/bin/exonerate --query ' +proteinDatabase+ ' --target ' +cmd[genome]['$1']+ ' --model protein2genome --percent 50 --showtargetgff yes --showalignment no --showvulgar no -M 1500 \n')
 			f.close()
 		jobID += 1
 
