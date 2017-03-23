@@ -48,3 +48,32 @@
 ## To do
 - Finish `infoTracker.py`
 - Test EVM with data from NCBI
+
+
+# Thursday, March 23th
+
+## Done
+- [x] pipelineGuide created
+
+## Notes
+- See two genomes with errors (have to check by hand - fixed if we check only genomic.fna)
+    - GCA\_000002195.1 : No genomic.fna.gz (but we have genomic.fna) and h annotations 
+    - $\rightarrow$ Use Augustus
+    - GCA\_001014675.1 : No genomic.fna.gz (but we have genomic.fna) and no gff annnotations 
+    - $\rightarrow$ GeneMark + Exonerate + EVM + Augustus
+    
+## TO DO                                                               
+> - Convert into GeneBank file and use Augustus! $\rightarrow$ __1__  
+> - Find Oskar $\rightarrow$ __37__ 
+
+- Already known, probably which one are in Genome\_search 
+- Figure out that finally, the Accesion number of the initial Genome_search where good, have to upload the 10 right genomes
+
+> - Use Augustus $\rightarrow$ __207__ 
+> - Use GeneMark + Exonerate + Evidence Modeller + Augutus $\rightarrow$ __1__
+
+- Have to create a pipeline only for Augustus
+    - Choose model for training (17 for each order at least)
+    
+## Notes
+- We can shut down Exonerate Pipeline (useless)
