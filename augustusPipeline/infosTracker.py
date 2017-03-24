@@ -28,9 +28,9 @@ def makeDecisions(infoDict, currentG):
 		if infoDict[currentG]["Protein annotations"] == 'Yes' :
 			infoDict[currentG]["TO DO"] = 'Find Oskar'
 		elif infoDict[currentG]["GeneBank annotations"] == 'Yes':
-			infoDict[currentG]["TO DO"] = 'Use Augustus'
+			infoDict[currentG]["TO DO"] = 'Check GFF3 annotations'
 		elif infoDict[currentG]["GeneBank annotations"] == 'No' and (infoDict[currentG]["GFF3 annotations"] == 'Yes' and infoDict[currentG]["Genomic fasta file"] == 'Yes'):
-			infoDict[currentG]["TO DO"] = 'Convert into GeneBank file and use Augustus!'
+			infoDict[currentG]["TO DO"] = 'Check GFF3 annotations'
 		elif infoDict[currentG]["GFF3 annotations"] == 'No' and infoDict[currentG]["Genomic fasta file"] == 'Yes':
 			infoDict[currentG]["TO DO"] = 'Use GeneMark + Exonerate + Evidence Modeller + Augustus'
 		elif infoDict[currentG]["Genomic fasta file"] == 'No' :
@@ -39,7 +39,7 @@ def makeDecisions(infoDict, currentG):
 			infoDict[currentG]["TO DO"] = "Good question ..."
 
 	elif infoDict[currentG]["Oskar presence"] == 'Yes' :
-		infoDict[currentG]["TO DO"] = 'Nothing to do'
+		infoDict[currentG]["TO DO"] = 'Oskar already known in this genome'
 
 	return infoDict
 
