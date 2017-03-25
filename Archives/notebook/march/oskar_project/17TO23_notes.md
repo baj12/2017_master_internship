@@ -1,6 +1,6 @@
 # Friday, March 17th
 
-## Done 
+## Done
 - [x] Understand all the pipeline and know all the commands to run
 
 ## To do
@@ -33,10 +33,10 @@
 # Tuesday, March 21st
 
 ## Done
-- [x] Have launched Exonerate on 200 genomes 
+- [x] Have launched Exonerate on 200 genomes
 
 ## In progress
-- Create a file which contain infos from all annotations genomes 
+- Create a file which contain infos from all annotations genomes
 
 
 # Wednesday, March 22nd
@@ -57,22 +57,18 @@
 
 ## Notes
 - See two genomes with errors (have to check by hand - fixed if we check only genomic.fna)
-    - GCA\_000002195.1 : No genomic.fna.gz (but we have genomic.fna) and have gff3 annotations 
+    - GCA\_000002195.1 : No genomic.fna.gz (but we have genomic.fna) and have gff3 annotations
     - $\rightarrow$ Use Augustus
-    - GCA\_001014675.1 : No genomic.fna.gz (but we have genomic.fna) and no gff3 annnotations 
+    - GCA\_001014675.1 : No genomic.fna.gz (but we have genomic.fna) and no gff3 annnotations
     - $\rightarrow$ GeneMark + Exonerate + EVM + Augustus
-- Nothing to do on _45 genomes_ 
+- Nothing to do on _45 genomes_
 
 ## TO DO   
 
 > - Convert into GeneBank file and use Augustus! $\rightarrow$ __1__  
 > - Use GeneMark + Exonerate + Evidence Modeller + Augutus $\rightarrow$ __1__
 > - Use directly Augustus __176__
-> - Find Oskar $\rightarrow$ __23__ 
+> - Find Oskar $\rightarrow$ __23__
 
 ## In progress
 - Choose model for training (17 for each order at least)
-- Have to create a pipeline only for Augustus
-    
-## Notes
-- We can shut down Exonerate Pipeline (useless)
