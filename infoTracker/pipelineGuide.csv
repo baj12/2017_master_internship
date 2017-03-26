@@ -1,0 +1,247 @@
+Species name,Order name,Family name,Accession number,Oskar presence,Protein annotations,GeneBank annotations,GFF3 annotations,Genomic fasta file,RNA fasta file,TO DO
+Catajapyx aquilonaris,Diplura,Japygidae,GCA_000934665.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Orchesella cincta,Collembola,Entomobryidae,GCA_001718145.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Zootermopsis nevadensis,Blattodea,Termopsidae,GCA_000696155.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Nasutitermes exitiosus,Blattodea,Termitidae,GCA_001404035.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Blattella germanica,Blattodea,Ectobiidae,GCA_000762945.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Pediculus humanus corporis,Phthiraptera,Pediculidae,GCA_000006295.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Isoperla grammatica,Plecoptera,Perlodidae,GCA_001676475.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Amphinemura sulcicollis,Plecoptera,Nemouridae,GCA_001676325.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Limnephilus lunatus,Trichoptera,Limnephilidae,GCA_000648945.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Frankliniella occidentalis,Thysanoptera,Thripidae,GCA_000697945.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Mengenilla moldrzyki,Strepsiptera,Mengenillidae,GCA_000281935.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Ephemera danica,Ephemeroptera,Ephemeridae,GCA_000507165.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Baetis rhodani,Ephemeroptera,Baetidae,GCA_001676355.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bemisia tabaci,Hemiptera,Aleyrodidae,GCA_001854935.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Oncopeltus fasciatus,Hemiptera,Lygaeidae,GCA_000696205.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Rhodnius prolixus,Hemiptera,Reduviidae,GCA_000181055.3,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Myzus persicae,Hemiptera,Aphididae,GCA_001856785.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Diuraphis noxia,Hemiptera,Aphididae,GCA_001938505.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Acyrthosiphon pisum,Hemiptera,Aphididae,GCA_000142985.2,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Cimex lectularius,Hemiptera,Cimicidae,GCA_001460545.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Cimex hemipterus,Hemiptera,Cimicidae,GCA_001663875.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Pachypsylla venusta,Hemiptera,Psyllidae,GCA_000695645.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Diaphorina citri,Hemiptera,Psyllidae,GCA_000475195.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Homalodisca vitripennis,Hemiptera,Cicadellidae,GCA_000696855.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Paracoccus marginatus,Hemiptera,Pseudococcidae,GCA_900065295.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Ferrisia virgata,Hemiptera,Pseudococcidae,GCA_900060175.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Trionymus perrisii,Hemiptera,Pseudococcidae,GCA_900050545.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Pseudococcus longispinus,Hemiptera,Pseudococcidae,GCA_900064475.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Maconellicoccus hirsutus,Hemiptera,Pseudococcidae,GCA_900064465.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Trabutina mannipara,Hemiptera,Pseudococcidae,GCA_900080175.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Nilaparvata lugens,Hemiptera,Delphacidae,GCA_000757685.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Gerris buenoi,Hemiptera,Gerridae,GCA_001010745.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Dactylopius coccus,Hemiptera,Dactylopiidae,GCA_000833685.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Halyomorpha halys,Hemiptera,Pentatomidae,GCA_000696795.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Piezodorus guildinii,Hemiptera,Pentatomidae,GCA_000786065.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Diachasma alloeum,Hymenoptera,Braconidae,GCA_001412515.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Cotesia vestalis,Hymenoptera,Braconidae,GCA_001675545.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Microplitis demolitor,Hymenoptera,Braconidae,GCA_000572035.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Fopius arisanus,Hymenoptera,Braconidae,GCA_000806365.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Nasonia longicornis,Hymenoptera,Pteromalidae,GCA_000004795.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Nasonia giraulti,Hymenoptera,Pteromalidae,GCA_000004775.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Nasonia vitripennis,Hymenoptera,Pteromalidae,GCA_000002325.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Polistes canadensis,Hymenoptera,Vespidae,GCA_001313835.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Polistes dominula,Hymenoptera,Vespidae,GCA_001465965.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bombus terrestris,Hymenoptera,Apidae,GCA_000214255.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Habropoda laboriosa,Hymenoptera,Apidae,GCA_001263275.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Melipona quadrifasciata,Hymenoptera,Apidae,GCA_001276565.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Apis mellifera intermissa,Hymenoptera,Apidae,GCA_000819425.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bombus impatiens,Hymenoptera,Apidae,GCA_000188095.2,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Apis dorsata,Hymenoptera,Apidae,GCA_000469605.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Ceratina calcarata,Hymenoptera,Apidae,GCA_001652005.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Eufriesea mexicana,Hymenoptera,Apidae,GCA_001483705.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Apis florea,Hymenoptera,Apidae,GCA_000184785.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Apis cerana,Hymenoptera,Apidae,GCA_001442555.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Apis mellifera,Hymenoptera,Apidae,GCA_000002195.1,N/A,No,No,Yes,Yes,No,Check GFF3 annotations
+Trichogramma pretiosum,Hymenoptera,Trichogrammatidae,GCA_000599845.2,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Cephus cinctus,Hymenoptera,Cephidae,GCA_000341935.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Orussus abietinus,Hymenoptera,Orussidae,GCA_000612105.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Athalia rosae,Hymenoptera,Tenthredinidae,GCA_000344095.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Copidosoma floridanum,Hymenoptera,Encyrtidae,GCA_000648655.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Pogonomyrmex barbatus,Hymenoptera,Formicidae,GCA_000187915.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Vollenhovia emeryi,Hymenoptera,Formicidae,GCA_000949405.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Monomorium pharaonis,Hymenoptera,Formicidae,GCA_000980195.3,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Trachymyrmex septentrionalis,Hymenoptera,Formicidae,GCA_001594115.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Solenopsis invicta,Hymenoptera,Formicidae,GCA_000188075.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Acromyrmex echinatior,Hymenoptera,Formicidae,GCA_000204515.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Harpegnathos saltator,Hymenoptera,Formicidae,GCA_000147195.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Lasius niger,Hymenoptera,Formicidae,GCA_001045655.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Pseudomyrmex gracilis,Hymenoptera,Formicidae,GCA_002006095.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Atta colombica,Hymenoptera,Formicidae,GCA_001594045.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Linepithema humile,Hymenoptera,Formicidae,GCA_000217595.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Cyphomyrmex costatus,Hymenoptera,Formicidae,GCA_001594065.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Cerapachys biroi,Hymenoptera,Formicidae,GCA_000611835.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Trachymyrmex cornetzi,Hymenoptera,Formicidae,GCA_001594075.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Dinoponera quadriceps,Hymenoptera,Formicidae,GCA_001313825.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Atta cephalotes,Hymenoptera,Formicidae,GCA_000143395.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Trachymyrmex zeteki,Hymenoptera,Formicidae,GCA_001594055.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Camponotus floridanus,Hymenoptera,Formicidae,GCA_000147175.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Wasmannia auropunctata,Hymenoptera,Formicidae,GCA_000956235.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Leptopilina clavipes,Hymenoptera,Figitidae,GCA_001855655.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Neodiprion lecontei,Hymenoptera,Diprionidae,GCA_001263575.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Ceratosolen solmsi marchali,Hymenoptera,Agaonidae,GCA_000503995.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Dufourea novaeangliae,Hymenoptera,Halictidae,GCA_001272555.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Lasioglossum albipes,Hymenoptera,Halictidae,GCA_000346575.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Megachile rotundata,Hymenoptera,Megachilidae,GCA_000220905.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Clunio marinus,Diptera,Chironomidae,GCA_900005825.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Belgica antarctica,Diptera,Chironomidae,GCA_000775305.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Chironomus riparius,Diptera,Chironomidae,GCA_001014505.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Chironomus tentans,Diptera,Chironomidae,GCA_000786525.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles farauti,Diptera,Culicidae,GCA_000956265.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles minimus,Diptera,Culicidae,GCA_000349025.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles funestus,Diptera,Culicidae,GCA_000349085.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles epiroticus,Diptera,Culicidae,GCA_000349105.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles culicifacies,Diptera,Culicidae,GCA_000473375.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles christyi,Diptera,Culicidae,GCA_000349165.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles quadriannulatus,Diptera,Culicidae,GCA_000349065.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles melas,Diptera,Culicidae,GCA_000473525.2,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles nili,Diptera,Culicidae,GCA_000439205.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles coluzzii,Diptera,Culicidae,GCA_000150765.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Aedes aegypti,Diptera,Culicidae,GCA_001014885.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles merus,Diptera,Culicidae,GCA_000473845.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles punctulatus,Diptera,Culicidae,GCA_000956255.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles stephensi,Diptera,Culicidae,GCA_000349045.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles koliensis,Diptera,Culicidae,GCA_000956275.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles gambiae,Diptera,Culicidae,GCA_001014525.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles dirus,Diptera,Culicidae,GCA_000349145.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles farauti No. 4,Diptera,Culicidae,GCA_000956215.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Aedes albopictus,Diptera,Culicidae,GCA_001574995.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anopheles albimanus,Diptera,Culicidae,GCA_000349125.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles atroparvus,Diptera,Culicidae,GCA_000473505.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Culex quinquefasciatus,Diptera,Culicidae,GCA_000209185.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles arabiensis,Diptera,Culicidae,GCA_000349185.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles sinensis,Diptera,Culicidae,GCA_000472065.2,Yes,No,Yes,Yes,No,No,Oskar already known in this genome
+Anopheles darlingi,Diptera,Culicidae,GCA_000211455.3,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Anopheles gambiae str. PEST,Diptera,Culicidae,GCA_000005575.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Anopheles maculatus,Diptera,Culicidae,GCA_000473185.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Phlebotomus papatasi,Diptera,Psychodidae,GCA_000262795.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Clogmia albipunctata,Diptera,Psychodidae,GCA_001014945.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Lutzomyia longipalpis,Diptera,Psychodidae,GCA_000265325.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bactrocera cucurbitae,Diptera,Tephritidae,GCA_000806345.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bactrocera oleae,Diptera,Tephritidae,GCA_001014625.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Tephritis californica,Diptera,Tephritidae,GCA_001017515.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bactrocera tryoni,Diptera,Tephritidae,GCA_000695345.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bactrocera dorsalis,Diptera,Tephritidae,GCA_000789215.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Eutreta diana,Diptera,Tephritidae,GCA_001015115.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bactrocera latifrons,Diptera,Tephritidae,GCA_001853355.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Ceratitis capitata,Diptera,Tephritidae,GCA_000347755.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Trupanea jonesi,Diptera,Tephritidae,GCA_001014665.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Rhagoletis zephyria,Diptera,Tephritidae,GCA_001687245.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila erecta,Diptera,Drosophilidae,GCA_000005135.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila grimshawi,Diptera,Drosophilidae,GCA_000005155.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Scaptodrosophila lebanonensis,Diptera,Drosophilidae,GCA_001014445.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila melanogaster,Diptera,Drosophilidae,GCA_001014345.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila miranda,Diptera,Drosophilidae,GCA_001014365.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila pseudoobscura pseudoobscura,Diptera,Drosophilidae,GCA_000149495.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Phortica variegata,Diptera,Drosophilidae,GCA_001014415.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila yakuba,Diptera,Drosophilidae,GCA_000005975.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila virilis,Diptera,Drosophilidae,GCA_000004125.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila takahashii,Diptera,Drosophilidae,GCA_000224235.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila pseudoobscura,Diptera,Drosophilidae,GCA_001014495.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila rhopaloa,Diptera,Drosophilidae,GCA_000236305.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila bipectinata,Diptera,Drosophilidae,GCA_000236285.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila eugracilis,Diptera,Drosophilidae,GCA_000236325.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila busckii,Diptera,Drosophilidae,GCA_001014355.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila willistoni,Diptera,Drosophilidae,GCA_000005925.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila arizonae,Diptera,Drosophilidae,GCA_001654025.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila albomicans,Diptera,Drosophilidae,GCA_001014995.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila ananassae,Diptera,Drosophilidae,GCA_000005115.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila suzukii,Diptera,Drosophilidae,GCA_000326985.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila kikkawai,Diptera,Drosophilidae,GCA_000224215.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila americana,Diptera,Drosophilidae,GCA_001245305.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Zaprionus indianus,Diptera,Drosophilidae,GCA_001752445.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila biarmipes,Diptera,Drosophilidae,GCA_000233415.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila ficusphila,Diptera,Drosophilidae,GCA_000220665.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila elegans,Diptera,Drosophilidae,GCA_000224195.2,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila persimilis,Diptera,Drosophilidae,GCA_000005195.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila navojoa,Diptera,Drosophilidae,GCA_001654015.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Drosophila mojavensis,Diptera,Drosophilidae,GCA_000005175.1,Yes,Yes,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila sechellia,Diptera,Drosophilidae,GCA_000525085.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Drosophila simulans,Diptera,Drosophilidae,GCA_000525065.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Musca domestica,Diptera,Muscidae,GCA_000371365.1,Yes,No,Yes,Yes,Yes,No,Oskar already known in this genome
+Stomoxys calcitrans,Diptera,Muscidae,GCA_001015335.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Lucilia sericata,Diptera,Calliphoridae,GCA_001014835.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Phormia regina,Diptera,Calliphoridae,GCA_001735585.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Calliphora vicina,Diptera,Calliphoridae,GCA_001017275.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Lucilia cuprina,Diptera,Calliphoridae,GCA_000699065.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Neobellieria bullata,Diptera,Sarcophagidae,GCA_001017455.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Sarcophagidae sp. BV-2014,Diptera,Sarcophagidae,GCA_001047195.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Glossina morsitans,Diptera,Glossinidae,GCA_001014515.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Glossina pallidipes,Diptera,Glossinidae,GCA_000688715.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Glossina palpalis gambiensis,Diptera,Glossinidae,GCA_000818775.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Glossina brevipalpis,Diptera,Glossinidae,GCA_000671755.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Glossina morsitans morsitans,Diptera,Glossinidae,GCA_001077435.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Glossina austeni,Diptera,Glossinidae,GCA_000688735.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Glossina fuscipes fuscipes,Diptera,Glossinidae,GCA_000671735.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Mayetiola destructor,Diptera,Cecidomyiidae,GCA_001014435.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Eristalis dimidiata,Diptera,Syrphidae,GCA_001015145.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Hermetia illucens,Diptera,Stratiomyidae,GCA_001014895.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Megaselia abdita,Diptera,Phoridae,GCA_001015175.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Megaselia scalaris,Diptera,Phoridae,GCA_000341915.2,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Tipula oleracea,Diptera,Tipulidae,GCA_001017535.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Chaoborus trivitattus,Diptera,Chaoboridae,GCA_001014815.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Mochlonyx cinctipes,Diptera,Chaoboridae,GCA_001014845.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Cirrula hians,Diptera,Ephydridae,GCA_001015075.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Ephydra gracilis,Diptera,Ephydridae,GCA_001014675.1,N/A,No,No,No,Yes,No,Use GeneMark + Exonerate + Evidence Modeller + Augustus
+Holcocephala fusca,Diptera,Asilidae,GCA_001015215.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Proctacanthus coquilletti,Diptera,Asilidae,GCA_001932985.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Trichoceridae sp. BV-2014,Diptera,Trichoceridae,GCA_001014425.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Coboldia fuscipes,Diptera,Scatopsidae,GCA_001014335.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Condylostylus patibulatus,Diptera,Dolichopodidae,GCA_001014875.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Liriomyza trifolii,Diptera,Agromyzidae,GCA_001014935.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Themira minor,Diptera,Sepsidae,GCA_001014575.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Teleopsis dalmanni,Diptera,Diopsidae,GCA_001017525.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Sphyracephala brevicornis,Diptera,Diopsidae,GCA_001015235.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Bombyx mori,Lepidoptera,Bombycidae,GCA_000325555.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Spodoptera frugiperda,Lepidoptera,Noctuidae,GCA_000753635.2,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Pieris rapae,Lepidoptera,Pieridae,GCA_001856805.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Phoebis sennae,Lepidoptera,Pieridae,GCA_001586405.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Manduca sexta,Lepidoptera,Sphingidae,GCA_000262585.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Amyelois transitella,Lepidoptera,Pyralidae,GCA_001186105.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Papilio polytes,Lepidoptera,Papilionidae,GCA_000836215.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Papilio machaon,Lepidoptera,Papilionidae,GCA_001298355.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Papilio glaucus,Lepidoptera,Papilionidae,GCA_000931545.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Papilio xuthus,Lepidoptera,Papilionidae,GCA_001298345.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Calycopis cecrops,Lepidoptera,Lycaenidae,GCA_001625245.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius numata tarapotensis,Lepidoptera,Nymphalidae,GCA_001486745.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius melpomene aglaope,Lepidoptera,Nymphalidae,GCA_001486105.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius melpomene malleti,Lepidoptera,Nymphalidae,GCA_001510935.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius cydno cordula,Lepidoptera,Nymphalidae,GCA_001485865.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius melpomene amaryllis,Lepidoptera,Nymphalidae,GCA_001486145.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius ethilla aerotome,Lepidoptera,Nymphalidae,GCA_001485785.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius ismenius,Lepidoptera,Nymphalidae,GCA_001485965.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius timareta timareta,Lepidoptera,Nymphalidae,GCA_001486465.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius numata silvana,Lepidoptera,Nymphalidae,GCA_001486245.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius pardalinus sergestus,Lepidoptera,Nymphalidae,GCA_001486765.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Danaus plexippus,Lepidoptera,Nymphalidae,GCA_000235995.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Heliconius timareta,Lepidoptera,Nymphalidae,GCA_001486705.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius cydno hermogenes,Lepidoptera,Nymphalidae,GCA_001510915.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius timareta ssp. NG-2008,Lepidoptera,Nymphalidae,GCA_001486645.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius ismenius metaphorus,Lepidoptera,Nymphalidae,GCA_001485725.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius numata arcuella,Lepidoptera,Nymphalidae,GCA_001486725.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius pardalinus ssp. JD-2011,Lepidoptera,Nymphalidae,GCA_001486605.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius ethilla,Lepidoptera,Nymphalidae,GCA_001485905.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius hecale felix,Lepidoptera,Nymphalidae,GCA_001486125.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius melpomene melpomene,Lepidoptera,Nymphalidae,GCA_000326025.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius elevatus,Lepidoptera,Nymphalidae,GCA_001486085.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Heliconius timareta ssp. JD-2011,Lepidoptera,Nymphalidae,GCA_001486685.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Melitaea cinxia,Lepidoptera,Nymphalidae,GCA_000716385.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Lerema accius,Lepidoptera,Hesperiidae,GCA_001278395.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Plutella xylostella,Lepidoptera,Plutellidae,GCA_000325945.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Operophtera brumata,Lepidoptera,Geometridae,GCA_001266575.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Chilo suppressalis,Lepidoptera,Crambidae,GCA_000636095.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Dendroctonus ponderosae,Coleoptera,Curculionidae,GCA_000346045.2,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Hypothenemus hampei,Coleoptera,Curculionidae,GCA_001012855.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Oryctes borbonicus,Coleoptera,Scarabaeidae,GCA_001443705.1,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Onthophagus taurus,Coleoptera,Scarabaeidae,GCA_000648695.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Tribolium castaneum,Coleoptera,Tenebrionidae,GCA_000002335.3,N/A,Yes,Yes,Yes,Yes,No,Find Oskar
+Leptinotarsa decemlineata,Coleoptera,Chrysomelidae,GCA_000500325.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Anoplophora glabripennis,Coleoptera,Cerambycidae,GCA_000390285.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Agrilus planipennis,Coleoptera,Buprestidae,GCA_000699045.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Priacma serrata,Coleoptera,Cupedidae,GCA_000281835.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Nicrophorus vespilloides,Coleoptera,Silphidae,GCA_001412225.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Aethina tumida,Coleoptera,Nitidulidae,GCA_001937115.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Timema cristinae,Phasmatodea,Timematidae,GCA_002009905.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Locusta migratoria,Orthoptera,Acrididae,GCA_000516895.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations
+Ladona fulva,Odonata,Libellulidae,GCA_000376725.1,N/A,No,Yes,Yes,Yes,No,Check GFF3 annotations

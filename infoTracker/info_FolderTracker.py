@@ -4,12 +4,12 @@
 Author: Savandara Besse
 
 Created date: 03-21-2017
-Modified date: 03-23-2017 
-Description: 
-Create a csv file where can see if a genome have file which 
-can help in the several pipelines : 
-	- protein.fna will help us to found Oskar 
-	- genomic.bff file can be directly used for Augustus pipeline 
+Modified date: 03-23-2017
+Description:
+Create a csv file where can see if a genome have file which
+can help in the several pipelines :
+	- protein.fna will help us to found Oskar
+	- genomic.bff file can be directly used for Augustus pipeline
 	- genomic.gff file can be used for Augustus pipeline if it is combined with genomic.fna file
 	- rna.fna presence are given just for information
 '''
@@ -35,7 +35,7 @@ def makeDecisions(infoDict, currentG):
 			infoDict[currentG]["TO DO"] = 'Use GeneMark + Exonerate + Evidence Modeller + Augustus'
 		elif infoDict[currentG]["Genomic fasta file"] == 'No' :
 			infoDict[currentG]["TO DO"] = 'Should look to the folder '+ currentG
-		else : 
+		else :
 			infoDict[currentG]["TO DO"] = "Good question ..."
 
 	elif infoDict[currentG]["Oskar presence"] == 'Yes' :
@@ -59,10 +59,10 @@ def getGenomeInfos(genomeSearch, genomeFolder, folder, currentG, GCA_number, inf
 		if hasToBeChecked == checked :
 			print("Oskar already identified in "+ hasToBeChecked)
 			infoDict[currentG]['Oskar presence'] = 'Yes'
-	
+
 	if 'Oskar presence' not in infoDict[currentG]:
 		infoDict[currentG]['Oskar presence'] = 'N/A'
-			
+
 	path = os.path.join(genomeFolder, folder, currentG)
 	allInfos = os.listdir(path)
 
@@ -131,7 +131,7 @@ def getAllGenomesInfos(pathcsv, genomeFolder) :
 def buildpipelineGuide(allGenomesInfos, df_i):
 	inf_df = []
 
-	for elem in allGenomesInfos : 
+	for elem in allGenomesInfos :
 		for key in elem.keys():
 			inf_df.append(elem[key])
 
@@ -140,7 +140,7 @@ def buildpipelineGuide(allGenomesInfos, df_i):
 
 	df_f = pd.merge(df_i, df_m, how='inner', on=['Accession number'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
 	df_f = df_f.set_index('Species name')
-	
+
 	f = open('pipelineGuide.csv','w', encoding="utf-8")
 
 	f.write("Species name,")
