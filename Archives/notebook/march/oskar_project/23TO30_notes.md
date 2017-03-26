@@ -9,3 +9,4 @@
 _For the week-end_
 # To do
 - Ask Sam about well-studied organisms in insects
+- For each order and family, look for EST and count Protein
