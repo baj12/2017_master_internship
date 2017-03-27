@@ -16,8 +16,8 @@ _For the week-end_
 
 ## Done 
 - [x] Find all order representants for HMM
+- [x] Look for HMM model without protein and annotations
 
-## To do
+## In progress
 - Download EST
-- Look for HMM model without protein and annotations
 - Prepare inputs for Maker
