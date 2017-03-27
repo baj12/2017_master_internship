@@ -10,7 +10,6 @@ Description:
 Create a csv file where can see for each organism and tell us :
 - its order and its family
 - if they have protein annotations file, its protein number
-- if they have gene annotations file, its gene number
 - if they have est in NCBI, its EST number
 
 '''
