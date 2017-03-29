@@ -1,18 +1,20 @@
-Order name,Species name,#Protein,#EST
-Blattodea,Zootermopsis nevadensis,14610.0,8322
-Coleoptera,Tribolium castaneum,18534.0,185437
-Collembola,Orchesella cincta,,1146
-Diplura,Catajapyx aquilonaris,,0
-Diptera,Zaprionus indianus,23304.0,821005
-Ephemeroptera,Ephemera danica,,0
-Hemiptera,Trionymus perrisii,,214834
-Hymenoptera,Wasmannia auropunctata,18742.0,169511
-Lepidoptera,Spodoptera frugiperda,16912.0,568825
-Odonata,Ladona fulva,,0
-Orthoptera,Locusta migratoria,,45709
-Phasmatodea,Timema cristinae,,0
-Phthiraptera,Pediculus humanus corporis,10775.0,1127
-Plecoptera,Isoperla grammatica,,0
-Strepsiptera,Mengenilla moldrzyki,,0
-Thysanoptera,Frankliniella occidentalis,,13839
-Trichoptera,Limnephilus lunatus,,0
+Order name,Species name,#EST
+Diplura,Catajapyx aquilonaris,0
+Collembola,Orchesella cincta,1146
+Blattodea,Blattella germanica,8322
+Phthiraptera,Pediculus humanus corporis,1127
+Plecoptera,Isoperla grammatica,0
+Plecoptera,Amphinemura sulcicollis,0
+Trichoptera,Limnephilus lunatus,0
+Thysanoptera,Frankliniella occidentalis,13839
+Strepsiptera,Mengenilla moldrzyki,0
+Ephemeroptera,Ephemera danica,0
+Ephemeroptera,Baetis rhodani,0
+Hemiptera,Acyrthosiphon pisum,214834
+Hymenoptera,Apis mellifera,169511
+Diptera,Drosophila melanogaster,821005
+Lepidoptera,Bombyx mori,568825
+Coleoptera,Dendroctonus ponderosae,185437
+Phasmatodea,Timema cristinae,0
+Orthoptera,Locusta migratoria,45709
+Odonata,Ladona fulva,0
