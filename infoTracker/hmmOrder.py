@@ -87,7 +87,7 @@ def countEST(df):
     for species in df.index :
         orgn = df["Species name"][species]
         print("Looking for "+orgn+ " EST")
-        handle = Entrez.esearch(db="nucest", term=orgn)
+        handle = Entrez.esearch(db="nucest", term=orgn, field='Organism')
         record = Entrez.read(handle)["Count"]
         handle.close()
 
@@ -111,7 +111,15 @@ def countEST(df):
     df_f = df_f.set_index('Species name')
     df_f.to_csv("prot_est_Infos.csv", sep=',', encoding="utf-8")
 
-    return df_f
+    print('prot_est_Infos.csv done')
+
+
+def build_hmm():
+    df = pd.read_csv('prot_est_Infos.csv')
+    g = df.groupby(['Order name', 'Species name'])
+    g['#EST'].max().to_csv("hmmOrder.csv", sep=',', encoding="utf-8")
+
+    print('hmmOrder.csv done')
 
 # Main
 
@@ -137,3 +145,4 @@ if pathcsv == "None":
 
 df = countProtein(pathcsv)
 dataframe = countEST(df)
+build_hmm()
