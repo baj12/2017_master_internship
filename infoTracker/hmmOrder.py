@@ -24,7 +24,7 @@ from Bio import Entrez
 Entrez.email = 'savandara.besse@gmail.com'
 
 
-def unzipProteinFile(genomeFolder, currentG):
+def unzipProteinFile(genomeFolder, currentG, gz_suffix, suffix):
     genomeidFolder = os.listdir(genomeFolder)
 
     toFind = re.findall(r'^(GCA)_([0-9]{9}).[0-9]{1}', currentG)[0]
@@ -36,34 +36,35 @@ def unzipProteinFile(genomeFolder, currentG):
 
         for  genome in genomeVersion :
             if currentG in genome :
-                print("Opening Genome: {}".format(genome))
-                path = os.path.join(genomeFolder, id_folder, genome, genome+"_protein.faa.gz")
+                print("Opening Genome: {}".format(genome)+gz_suffix)
+                path = os.path.join(genomeFolder, id_folder, genome, genome+gz_suffix)
                 if os.path.isfile(path):
-                    if not os.path.isfile(os.path.join(genomeFolder, id_folder, genome, genome+"_protein.faa")):
+                    if not os.path.isfile(os.path.join(genomeFolder, id_folder, genome, genome+suffix)):
                         P = Popen(['gunzip',path])
                         ret = P.wait()
                         if ret != 0:
                             print("Error Gunzipping !")
-                path = os.path.join(genomeFolder, id_folder, genome, genome+"_protein.faa")
+                path = os.path.join(genomeFolder, id_folder, genome, genome+suffix)
                 if os.path.isfile(path):
                     return path
 
+
 def countProtein(pathcsv):
     protInfo_list = []
-    df = pd.read_csv(pathcsv)
+    df_i = pd.read_csv(pathcsv)
 
-    for species in df.index :
-        genomeID = df["Accession number"][species]
+    for species in df_i.index :
+        genomeID = df_i["Accession number"][species]
         protDict = {}
         protDict[genomeID] = {}
         protDict[genomeID]["Accession number"] = genomeID
 
-        if df["Protein annotations"][species] == "Yes" :
-            path = unzipProteinFile(genomeFolder, genomeID)
+        if df_i["Protein annotations"][species] == "Yes" :
+            path = unzipProteinFile(genomeFolder, genomeID,"_protein.faa.gz","_protein.faa")
             protein_nb = os.popen("grep '>' "+path+ " | wc -l").read().split('\n')[0]
             protDict[genomeID]["#Protein"] = protein_nb
 
-        if df["Protein annotations"][species] == "No" :
+        if df_i["Protein annotations"][species] == "No" :
             protDict[genomeID]["#Protein"] = "N/A"
 
         protInfo_list.append(protDict)
@@ -74,11 +75,43 @@ def countProtein(pathcsv):
         for key in elem.keys():
             prot_df.append(elem[key])
 
-    df = df[['Order name', 'Family name', 'Species name', 'Accession number']]
+    df_i = df_i[['Order name', 'Family name', 'Species name', 'Accession number']]
     df_m1 = pd.DataFrame(prot_df)
-    df_m2 = pd.merge(df, df_m1, how='inner', on=['Accession number'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
+    prot_df = pd.merge(df_i, df_m1, how='inner', on=['Accession number'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
 
-    return df_m2
+    return prot_df
+
+
+def countGene(df, pathcsv):
+    geneInfo_list = []
+    df_i = pd.read_csv(pathcsv)
+
+    for species in df_i.index :
+        genomeID = df_i["Accession number"][species]
+        protDict = {}
+        protDict[genomeID] = {}
+        protDict[genomeID]["Accession number"] = genomeID
+
+        if df_i["GFF3 annotations"][species] == "Yes" :
+            path = unzipProteinFile(genomeFolder, genomeID, "_genomic.gff.gz", "_genomic.gff")
+            protein_nb = os.popen("grep '##sequence-region' "+path+ " | wc -l").read().split('\n')[0]
+            protDict[genomeID]["#Gene"] = protein_nb
+
+        if df_i["GFF3 annotations"][species] == "No" :
+            protDict[genomeID]["#Gene"] = "N/A"
+
+        geneInfo_list.append(protDict)
+
+    gene_df = []
+
+    for elem in geneInfo_list :
+        for key in elem.keys():
+            gene_df.append(elem[key])
+
+    df_m1 = pd.DataFrame(gene_df)
+    prot_gene_df = pd.merge(df, df_m1, how='inner', on=['Accession number'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
+
+    return prot_gene_df
 
 
 def countEST(df):
@@ -116,10 +149,24 @@ def countEST(df):
 
 def build_hmm():
     df = pd.read_csv('prot_est_Infos.csv')
-    g = df.groupby(['Order name', 'Species name'])
-    g['#EST'].max().to_csv("hmmOrder.csv", sep=',', encoding="utf-8")
+    g = df.groupby(['Order name'])
+
+    maxEST = g['#EST'].max().to_dict()
+
+    f = open('hmmOrder.csv','w')
+    f.write('Order name,Species name,#EST\n')
+    for index in df.index :
+        for key in maxEST.keys():
+            if df['Order name'][index] == key and df['#EST'][index] == maxEST[key]:
+                f.write(df['Order name'][index])
+                f.write(',')
+                f.write(df['Species name'][index])
+                f.write(',')
+                f.write(str(df['#EST'][index])+'\n')
+    f.close()
 
     print('hmmOrder.csv done')
+
 
 # Main
 
@@ -143,6 +190,7 @@ if pathcsv == "None":
 	print("pipelineGuide file must be provided")
 	sys.exit(1)
 
-df = countProtein(pathcsv)
-dataframe = countEST(df)
+prot_df = countProtein(pathcsv)
+prot_gene_df = countGene(prot_df, pathcsv)
+countEST(prot_gene_df)
 build_hmm()
