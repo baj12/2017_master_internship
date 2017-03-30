@@ -4,13 +4,14 @@
 Author: Savandara Besse
 
 Created date: 03-26-2017
-Modified date: 03-27-2017
+Modified date: 03-30-2017
 
 Description:
 Create a csv file where can see for each organism and tell us :
 - its order and its family
 - if they have protein annotations file, its protein number
 - if they have est in NCBI, its EST number
+- if they have GFF3 annotations, its gene number
 
 '''
 
@@ -140,7 +141,7 @@ def countEST(df):
     df_m3 = pd.DataFrame(est_df)
     df_f = pd.merge(df, df_m3, how='inner', on=['Species name'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
 
-    df_f = df_f[["Species name","Order name","Family name","#Protein","#EST"]]
+    df_f = df_f[["Species name","Order name","Family name","#Gene","#Protein","#EST"]]
     df_f = df_f.set_index('Species name')
     df_f.to_csv("prot_est_Infos.csv", sep=',', encoding="utf-8")
 
@@ -148,7 +149,7 @@ def countEST(df):
 
 
 def build_hmm():
-    df = pd.read_csv('prot_est_Infos.csv')
+    df = pd.read_csv('gene_prot_est_Infos.csv')
     g = df.groupby(['Order name'])
 
     maxEST = g['#EST'].max().to_dict()
