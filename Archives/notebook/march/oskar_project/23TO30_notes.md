@@ -29,9 +29,21 @@ _For the week-end_
 # Wednesday, March 29th
 
 ## In progress
-- Count number of gene in GFF files
 - Downloading EST for 10 HMM order
 
 ## To do
 - Begin to prepare Maker pipeline
-- Begin to prepare Augustus etraining pipeline 
+- Begin to prepare Augustus etraining pipeline
+
+
+# Thursday, March 30th
+
+## Done
+- [x] Count number of gene in GFF files
+
+## In progress
+- Understand how works Maker
+
+## To do
+- Create folder for each HMM to use MAKER 
+- Test Maker
