@@ -25,7 +25,7 @@ from Bio import Entrez
 Entrez.email = 'savandara.besse@gmail.com'
 
 
-def unzipProteinFile(genomeFolder, currentG, gz_suffix, suffix):
+def unzipFile(genomeFolder, currentG, gz_suffix, suffix):
     genomeidFolder = os.listdir(genomeFolder)
 
     toFind = re.findall(r'^(GCA)_([0-9]{9}).[0-9]{1}', currentG)[0]
@@ -61,7 +61,7 @@ def countProtein(pathcsv):
         protDict[genomeID]["Accession number"] = genomeID
 
         if df_i["Protein annotations"][species] == "Yes" :
-            path = unzipProteinFile(genomeFolder, genomeID,"_protein.faa.gz","_protein.faa")
+            path = unzipFile(genomeFolder, genomeID,"_protein.faa.gz","_protein.faa")
             protein_nb = os.popen("grep '>' "+path+ " | wc -l").read().split('\n')[0]
             protDict[genomeID]["#Protein"] = protein_nb
 
@@ -94,7 +94,7 @@ def countGene(df, pathcsv):
         protDict[genomeID]["Accession number"] = genomeID
 
         if df_i["GFF3 annotations"][species] == "Yes" :
-            path = unzipProteinFile(genomeFolder, genomeID, "_genomic.gff.gz", "_genomic.gff")
+            path = unzipFile(genomeFolder, genomeID, "_genomic.gff.gz", "_genomic.gff")
             protein_nb = os.popen("grep '##sequence-region' "+path+ " | wc -l").read().split('\n')[0]
             protDict[genomeID]["#Gene"] = protein_nb
 
@@ -141,11 +141,11 @@ def countEST(df):
     df_m3 = pd.DataFrame(est_df)
     df_f = pd.merge(df, df_m3, how='inner', on=['Species name'], sort=False, suffixes=('_x', '_y'), copy=True, indicator=False)
 
-    df_f = df_f[["Species name","Order name","Family name","#Gene","#Protein","#EST"]]
+    df_f = df_f[["Species name","Order name","Family name",'Accession number',"#Gene","#Protein","#EST"]]
     df_f = df_f.set_index('Species name')
-    df_f.to_csv("prot_est_Infos.csv", sep=',', encoding="utf-8")
+    df_f.to_csv("gene_prot_est_Infos.csv", sep=',', encoding="utf-8")
 
-    print('prot_est_Infos.csv done')
+    print('gene_prot_est_Infos.csv done')
 
 
 def build_hmm():
@@ -155,13 +155,15 @@ def build_hmm():
     maxEST = g['#EST'].max().to_dict()
 
     f = open('hmmOrder.csv','w')
-    f.write('Order name,Species name,#EST\n')
+    f.write('Order name,Species name,Accession number,#EST\n')
     for index in df.index :
         for key in maxEST.keys():
             if df['Order name'][index] == key and df['#EST'][index] == maxEST[key]:
                 f.write(df['Order name'][index])
                 f.write(',')
                 f.write(df['Species name'][index])
+                f.write(',')
+                f.write(df['Accession number'][index])
                 f.write(',')
                 f.write(str(df['#EST'][index])+'\n')
     f.close()
