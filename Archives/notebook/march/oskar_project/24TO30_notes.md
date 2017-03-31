@@ -1,4 +1,4 @@
-# Friday, March 30th
+# Friday, March 24th
 
 ## In progess
 - Choose model for training (17 for each order at least)
@@ -45,5 +45,5 @@ _For the week-end_
 - Understand how works Maker
 
 ## To do
-- Create folder for each HMM to use MAKER 
+- Create folder for each HMM to use MAKER
 - Test Maker
