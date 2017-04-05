@@ -8,3 +8,18 @@
 _For the week end_
 - Prepare Maker pipeline
 - Prepare Augustus etraining pipeline
+
+# Monday, April 3rd
+
+## Done
+ - [x] Run Maker -CTL
+ - [x] Prepare sbatch_maker (BUT FAILED ...)
+
+
+# Tuesday, April 4th
+
+## Done
+- [x] Fix sbatch_maker
+
+## In progress
+- Running Maker   
