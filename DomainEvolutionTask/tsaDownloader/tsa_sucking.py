@@ -48,6 +48,6 @@ for line in alldata[1:] :
 bar = progressbar.ProgressBar(widgets=[' [', progressbar.Timer(), '] ', progressbar.Bar(), ' (', progressbar.ETA(), ') ', ])
 path = os.path.join(genomePath, 'diptera_TSA')
 for key in bar(tsaDict.keys()) :
-	init = re.findall("^([A-Z]{4})", key)[0]
-	version = tsaDict[key]
-	os.system('rsync --copy-links --recursive --times --verbose rsync://ftp.ncbi.nlm.nih.gov/genbank/tsa/tsa.{}.{}.fsa_nt.gz '.format(init, version)+path)
+    init = re.findall("^([A-Z]{4})", key)[0]
+    version = tsaDict[key]
+    os.system('rsync --copy-links --recursive --times --verbose rsync://ftp.ncbi.nlm.nih.gov/genbank/tsa/tsa.{}.{}.fsa_nt.gz '.format(init, version)+path)

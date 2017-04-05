@@ -25,14 +25,16 @@ _For the week end_
 ## In progress
 - Running Maker  (STILL FAILED, have to change Repeat masker model)\
 
+
 # Wednesday, April 5th
 
 ## In progress
 - Finally run Maker on Odissey cluster (_WAIT FOR A WEEK_)
-- TSA downloading
 
 ## Done
 - [x] Install EMBOSS software
+- [x] TSA downloading (Have to download 5 by hand because version error in name)
 
 ## To do
 - See how Blender works
+- Run Transeq on all TSA
