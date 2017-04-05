@@ -20,6 +20,7 @@ _For the week end_
 
 ## Done
 - [x] Fix sbatch_maker
+- [x] Leo meeting
 
 ## In progress
-- Running Maker   
+- Running Maker   (STILL FAILED, have to change Repeat masker model)
