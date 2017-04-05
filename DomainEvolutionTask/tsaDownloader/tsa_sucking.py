@@ -31,21 +31,23 @@ if pathcsv == "None":
 	print("List of genome to dowload must be provided.\n -h for more information")
 	sys.exit(1)
 
-if not os.path.isdir(os.path.join(genomePath, 'DipteraTSA')):
-	os.mkdir(os.path.join(genomePath, 'DipteraTSA'))
+if not os.path.isdir(os.path.join(genomePath, 'diptera_TSA')):
+	os.mkdir(os.path.join(genomePath, 'diptera_TSA'))
 
 f = open(pathcsv)
 alldata = [x.strip() for x in f.readlines()]
 f.close()
 
-tsa_list = []
+tsaDict = {}
 
 for line in alldata[1:] :
-	line = line.split('\t')
-	tsa_list.append(line[2])
+    line = line.split('\t')
+    tsaDict[line[2]] = line[3]
+
 
 bar = progressbar.ProgressBar(widgets=[' [', progressbar.Timer(), '] ', progressbar.Bar(), ' (', progressbar.ETA(), ') ', ])
-for i in bar(range(len(tsa_list))) :
-	arg = re.findall("^([A-Z]{4})0([0-9]{1})", tsa_list[i])[0]
-	path = os.path.join(genomePath, 'DipteraTSA')
-	os.system('rsync --copy-links --recursive --times --verbose rsync://ftp.ncbi.nlm.nih.gov/genbank/tsa/tsa.{}.{}.fsa_nt.gz '.format(arg[0], arg[1])+path)
+path = os.path.join(genomePath, 'diptera_TSA')
+for key in bar(tsaDict.keys()) :
+	init = re.findall("^([A-Z]{4})", key)[0]
+	version = tsaDict[key]
+	os.system('rsync --copy-links --recursive --times --verbose rsync://ftp.ncbi.nlm.nih.gov/genbank/tsa/tsa.{}.{}.fsa_nt.gz '.format(init, version)+path)
