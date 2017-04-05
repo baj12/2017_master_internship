@@ -2,7 +2,7 @@
 Author: Savandara Besse
 
 Created date: 03/28/2017
-Modified date: 03/29/2017
+Modified date: 04/04/2017
 
 Description: This script allows to download all est fasta for each organism
 which choose as HMM for Maker pipeline
@@ -23,8 +23,9 @@ def download_EST(pathcsv, estpath):
             search_handle = Entrez.esearch(db = "nucest", term = df['Species name'][index], field='Organism', retmax =df['#EST'][index])
             id_list = Entrez.read(search_handle)['IdList']
             search_handle.close()
+            name = df['Species name'][index].replace(' ','_')
 
-            out_handle = open(estpath+'/'+df['Species name'][index]+'_est.fna',"w")
+            out_handle = open(estpath+'/'+name+'_est.fna',"w")
             for elem in range(len(id_list)) :
                 print('Downloading '+str(elem+1) +'/'+str(len(id_list))+' in progress')
                 net_handle = Entrez.efetch(db="nucest", id=id_list[elem], rettype="fasta", retmode="text")
