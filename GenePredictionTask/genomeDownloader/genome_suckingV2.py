@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 
 '''
 Author: Savandara Besse and Leo Blondel
@@ -6,8 +6,8 @@ Author: Savandara Besse and Leo Blondel
 Created date: 03-14-2017
 Modified date: 03-15-2017
 
-Description: This script allows to download all genomes folders 
-corresponding to accession numbers given in the file 
+Description: This script allows to download all genomes folders
+corresponding to accession numbers given in the file
 curated_insectGenomesInfos.csv
 
 '''
