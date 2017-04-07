@@ -38,3 +38,12 @@ _For the week end_
 ## To do
 - See how Blender works
 - Run Transeq on all TSA
+
+
+# Thursday, April 6th
+
+## Done
+- [x] Lepidoptera maker Done
+
+## To do
+- [x] Lepidoptera augustus training
