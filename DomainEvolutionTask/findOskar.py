@@ -63,6 +63,8 @@ for folder in oskar_search :
         oskarDict[tsa] = {}
         oskarDict[tsa]['orgn'] = orgn
         oskarDict[tsa]['id'] = 'N/A'
+        oskarDict[tsa]['osk'] = 'no'
+        oskarDict[tsa]['lotus'] = 'no'
         oskarDict[tsa]['oskar'] = 'no'
 
 
@@ -71,6 +73,8 @@ for folder in oskar_search :
         oskarDict[tsa] = {}
         oskarDict[tsa]['orgn'] = orgn
         oskarDict[tsa]['id'] = 'N/A'
+        oskarDict[tsa]['osk'] = 'yes'
+        oskarDict[tsa]['lotus'] = 'no'
         oskarDict[tsa]['oskar'] = 'no'
 
     elif len(osk_idList) == 0 and len(lotus_idList) != 0 :
@@ -78,6 +82,8 @@ for folder in oskar_search :
         oskarDict[tsa] = {}
         oskarDict[tsa]['orgn'] = orgn
         oskarDict[tsa]['id'] = 'N/A'
+        oskarDict[tsa]['osk'] = 'no'
+        oskarDict[tsa]['lotus'] = 'yes'
         oskarDict[tsa]['oskar'] = 'no'
 
     else :
@@ -89,23 +95,33 @@ for folder in oskar_search :
                 oskarDict[tsa] = {}
                 oskarDict[tsa]['orgn'] = orgn
                 oskarDict[tsa]['id'] = id_list
+                oskarDict[tsa]['osk'] = 'yes'
+                oskarDict[tsa]['lotus'] = 'yes'
                 oskarDict[tsa]['oskar'] = 'yes'
+            else :
+              oskarDict[tsa] = {}
+              oskarDict[tsa]['orgn'] = orgn
+              oskarDict[tsa]['id'] = 'N/A'
+              oskarDict[tsa]['osk'] = 'yes'
+              oskarDict[tsa]['lotus'] = 'yes'
+              oskarDict[tsa]['oskar'] = 'no'
 
-f = open('oskar_result.txt', 'w')
-f.write('tsa\torganism\toskar_sequence\toskar\n')
+f = open('oskar_result.csv', 'w')
+f.write('tsa\torganism\tosk\tlotus\toskar\toskar_sequence\n')
 
 for key in sorted(oskarDict.keys()):
     f.write(key)
     f.write('\t')
     f.write(oskarDict[key]['orgn'])
     f.write('\t')
-    for elem in oskarDict[key]['id'] :
-        f.write(elem)
+    f.write(oskarDict[key]['osk'])
+    f.write('\t')
+    f.write(oskarDict[key]['lotus'])
     f.write('\t')
     f.write(oskarDict[key]['oskar'])
+    f.write('\t')
+    for elem in oskarDict[key]['id'] :
+        f.write(elem)
     f.write('\n')
 
-f.write('\n\n')
-f.write('Found Oskar in '+str(withOskar)+' species\n')
-f.write('Not found Oskar in '+str(withoutOskar)+' species\n')
 f.close()
