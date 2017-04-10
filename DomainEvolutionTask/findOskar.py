@@ -100,11 +100,19 @@ for folder in oskar_search :
                 oskarDict[tsa]['oskar'] = 'yes'
             else :
               oskarDict[tsa] = {}
+<<<<<<< HEAD
               oskarDict[tsa]['orgn'] = orgn
               oskarDict[tsa]['id'] = 'N/A'
               oskarDict[tsa]['osk'] = 'yes'
               oskarDict[tsa]['lotus'] = 'yes'
               oskarDict[tsa]['oskar'] = 'no'
+=======
+                oskarDict[tsa]['orgn'] = orgn
+                oskarDict[tsa]['id'] = None
+                oskarDict[tsa]['osk'] = 'yes'
+                oskarDict[tsa]['lotus'] = 'yes'
+                oskarDict[tsa]['oskar'] = 'no'
+>>>>>>> 5f1dd3bc4f3749d61ae583f4e52d88f23f22275d
 
 f = open('oskar_result.csv', 'w')
 f.write('tsa\torganism\tosk\tlotus\toskar\toskar_sequence\n')
