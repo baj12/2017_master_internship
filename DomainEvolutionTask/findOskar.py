@@ -4,6 +4,7 @@
 Author: Savandara Besse
 
 Created date: 04-08-2017
+Modified date : 04-11-2017
 
 Description: This script compares result files from hmmsearch to identify
 if an osk and an lotus is in the same sequence
@@ -17,7 +18,6 @@ parser.add_option("-p", "--oskar_search_path", dest='oskar_search_path', default
                   help="[Required] Location of the hmmsearch result folder")
 
 (options, args) = parser.parse_args()
-
 oskar_search_path = options.oskar_search_path
 
 oskar_search = os.listdir(oskar_search_path)
@@ -62,7 +62,7 @@ for folder in oskar_search :
         withoutOskar += 1
         oskarDict[tsa] = {}
         oskarDict[tsa]['orgn'] = orgn
-        oskarDict[tsa]['id'] = 'N/A'
+        oskarDict[tsa]['id'] = ''
         oskarDict[tsa]['osk'] = 'no'
         oskarDict[tsa]['lotus'] = 'no'
         oskarDict[tsa]['oskar'] = 'no'
@@ -72,7 +72,7 @@ for folder in oskar_search :
         withoutOskar += 1
         oskarDict[tsa] = {}
         oskarDict[tsa]['orgn'] = orgn
-        oskarDict[tsa]['id'] = 'N/A'
+        oskarDict[tsa]['id'] = ''
         oskarDict[tsa]['osk'] = 'yes'
         oskarDict[tsa]['lotus'] = 'no'
         oskarDict[tsa]['oskar'] = 'no'
@@ -81,7 +81,7 @@ for folder in oskar_search :
         withoutOskar += 1
         oskarDict[tsa] = {}
         oskarDict[tsa]['orgn'] = orgn
-        oskarDict[tsa]['id'] = 'N/A'
+        oskarDict[tsa]['id'] = ''
         oskarDict[tsa]['osk'] = 'no'
         oskarDict[tsa]['lotus'] = 'yes'
         oskarDict[tsa]['oskar'] = 'no'
@@ -100,36 +100,19 @@ for folder in oskar_search :
                 oskarDict[tsa]['oskar'] = 'yes'
             else :
               oskarDict[tsa] = {}
-<<<<<<< HEAD
               oskarDict[tsa]['orgn'] = orgn
-              oskarDict[tsa]['id'] = 'N/A'
+              oskarDict[tsa]['id'] = ''
               oskarDict[tsa]['osk'] = 'yes'
               oskarDict[tsa]['lotus'] = 'yes'
               oskarDict[tsa]['oskar'] = 'no'
-=======
-                oskarDict[tsa]['orgn'] = orgn
-                oskarDict[tsa]['id'] = None
-                oskarDict[tsa]['osk'] = 'yes'
-                oskarDict[tsa]['lotus'] = 'yes'
-                oskarDict[tsa]['oskar'] = 'no'
->>>>>>> 5f1dd3bc4f3749d61ae583f4e52d88f23f22275d
 
-f = open('oskar_result.csv', 'w')
-f.write('tsa\torganism\tosk\tlotus\toskar\toskar_sequence\n')
+f = open('oskar_result.txt', 'w')
+f.write('tsa,organism,osk,lotus,oskar,oskar_sequence\n')
 
 for key in sorted(oskarDict.keys()):
-    f.write(key)
-    f.write('\t')
-    f.write(oskarDict[key]['orgn'])
-    f.write('\t')
-    f.write(oskarDict[key]['osk'])
-    f.write('\t')
-    f.write(oskarDict[key]['lotus'])
-    f.write('\t')
-    f.write(oskarDict[key]['oskar'])
-    f.write('\t')
+    f.write('{},{},{},{},{},'.format(key, oskarDict[key]['orgn'], oskarDict[key]['osk'], oskarDict[key]['lotus'], oskarDict[key]['oskar']))
     for elem in oskarDict[key]['id'] :
         f.write(elem)
-    f.write('\n')
+    f.write('/n')
 
 f.close()
