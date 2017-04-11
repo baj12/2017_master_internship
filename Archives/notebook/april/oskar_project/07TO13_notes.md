@@ -9,17 +9,24 @@
 - Working on diptera TSA to study utr evolution of Oskar
 
 
-# Monday, March 9th
+# Monday, March 10th
 
 ## Done
 - [x] Analyzed hmmsearch output files with Leo
 - [x] Updated of genome sequences of all insects (adding refseq sequences)
 
 
-# Tuesday, March 10th
+# Tuesday, March 11th
 
-## To do
-- Have to install Geneious database
+## Done
+- [x] Installed Geneious database
+- [x] Built tsa oskar fasta file
 
 ## In  progress
 - Test Augustus training with Bombix mori
+
+## To do
+- Analyzing the alignment
+
+
+# Wednesday, March 12th
