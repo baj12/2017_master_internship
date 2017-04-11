@@ -1,0 +1,249 @@
+tax_id,sp_name,order_name,genome_id,family_id,order_id,family_name
+101932,Heliconius timareta,Lepidoptera,GCA_001486705.1,33415,7088,Nymphalidae
+103372,Acromyrmex echinatior,Hymenoptera,GCF_000204515.1,36668,7399,Formicidae
+1041015,Drosophila rhopaloa,Diptera,GCF_000236305.1,7214,7147,Drosophilidae
+104421,Camponotus floridanus,Hymenoptera,GCF_000147175.1,36668,7399,Formicidae
+104452,Operophtera brumata,Lepidoptera,GCA_001266575.1,82593,7088,Geometridae
+104688,Bactrocera oleae,Diptera,GCF_001188975.1,7211,7147,Tephritidae
+1049336,Ephemera danica,Ephemeroptera,GCA_000507165.1,50581,30073,Ephemeridae
+1077261,Heliconius numata arcuella,Lepidoptera,GCA_001486725.1,33415,7088,Nymphalidae
+108931,Nilaparvata lugens,Hemiptera,GCA_000757685.1,33362,7524,Delphacidae
+110193,Nicrophorus vespilloides,Coleoptera,GCF_001412225.1,57514,7041,Silphidae
+1109109,Heliconius hecale felix,Lepidoptera,GCA_001486125.1,33415,7088,Nymphalidae
+1109111,Heliconius ismenius metaphorus,Lepidoptera,GCA_001485725.1,33415,7088,Nymphalidae
+1109112,Heliconius pardalinus ssp. JD-2011,Lepidoptera,GCA_001486605.1,33415,7088,Nymphalidae
+1109113,Heliconius timareta ssp. JD-2011,Lepidoptera,GCA_001486685.1,33415,7088,Nymphalidae
+112268,Anopheles minimus,Diptera,GCA_000349025.1,7157,7147,Culicidae
+113334,Melitaea cinxia,Lepidoptera,GCA_000716385.1,33415,7088,Nymphalidae
+114634,Nasutitermes exitiosus,Blattodea,GCA_001404035.1,46569,85823,Termitidae
+1155016,Mengenilla moldrzyki,Strepsiptera,GCA_000281935.1,50600,30261,Mengenillidae
+116153,Aethina tumida,Coleoptera,GCF_001937115.1,116151,7041,Nitidulidae
+121224,Pediculus humanus corporis,Phthiraptera,GCA_000006295.1,121221,85819,Pediculidae
+121225,Pediculus humanus corporis,Phthiraptera,GCF_000006295.1,121221,85819,Pediculidae
+1218281,Limnephilus lunatus,Trichoptera,GCA_000648945.1,50645,30263,Limnephilidae
+121845,Diaphorina citri,Hemiptera,GCF_000475195.1,30092,7524,Psyllidae
+123851,Ladona fulva,Odonata,GCA_000376725.1,6964,6961,Libellulidae
+125945,Drosophila biarmipes,Diptera,GCF_000233415.1,7214,7147,Drosophilidae
+1295211,Trionymus perrisii,Hemiptera,GCA_900050545.1,30190,7524,Pseudococcidae
+12957,Atta cephalotes,Hymenoptera,GCF_000143395.1,36668,7399,Formicidae
+13037,Danaus plexippus,Lepidoptera,GCA_000235995.1,33415,7088,Nymphalidae
+13164,Myzus persicae,Hemiptera,GCA_001856785.1,27482,7524,Aphididae
+132113,Bombus impatiens,Hymenoptera,GCF_000188095.1,7458,7399,Apidae
+13233,Pseudococcus longispinus,Hemiptera,GCA_900064475.1,30190,7524,Pseudococcidae
+13249,Rhodnius prolixus,Hemiptera,GCA_000181055.3,27479,7524,Reduviidae
+133901,Frankliniella occidentalis,Thysanoptera,GCA_000697945.1,45053,30262,Thripidae
+1352481,Eristalis dimidiata,Diptera,GCA_001015145.1,34680,7147,Syrphidae
+136037,Zootermopsis nevadensis,Blattodea,GCA_000696155.1,7501,85823,Termopsidae
+13632,Lucilia sericata,Diptera,GCA_001014835.1,7371,7147,Calliphoridae
+13686,Solenopsis invicta,Hymenoptera,GCF_000188075.1,36668,7399,Formicidae
+139649,Teleopsis dalmanni,Diptera,GCA_001017525.1,139644,7147,Diopsidae
+139677,Sphyracephala brevicornis,Diptera,GCA_001015235.1,139644,7147,Diopsidae
+139723,Anopheles culicifacies,Diptera,GCA_000473375.1,7157,7147,Culicidae
+142686,Ceratosolen solmsi marchali,Hymenoptera,GCF_000503995.1,75187,7399,Agaonidae
+143724,Amphinemura sulcicollis,Plecoptera,GCA_001676325.1,62802,50622,Nemouridae
+143948,Diuraphis noxia,Hemiptera,GCF_001186385.1,27482,7524,Aphididae
+143995,Megachile rotundata,Hymenoptera,GCF_000220905.1,124286,7399,Megachilidae
+144034,Pogonomyrmex barbatus,Hymenoptera,GCF_000187915.1,36668,7399,Formicidae
+1501340,Heliconius cydno hermogenes,Lepidoptera,GCA_001510915.1,33415,7088,Nymphalidae
+1518534,Anopheles coluzzii,Diptera,GCA_000150765.1,7157,7147,Culicidae
+156304,Ceratina calcarata,Hymenoptera,GCF_001652005.1,7458,7399,Apidae
+1577614,Condylostylus patibulatus,Diptera,GCA_001014875.1,92558,7147,Dolichopodidae
+1577615,Ephydra gracilis,Diptera,GCA_001014675.1,48991,7147,Ephydridae
+1577616,Cirrula hians,Diptera,GCA_001015075.1,48991,7147,Ephydridae
+1577617,Holcocephala fusca,Diptera,GCA_001015215.1,50673,7147,Asilidae
+1577618,Sarcophagidae sp. BV-2014,Diptera,GCA_001047195.1,7381,7147,Sarcophagidae
+1577620,Trichoceridae sp. BV-2014,Diptera,GCA_001014425.1,52747,7147,Trichoceridae
+1577623,Mochlonyx cinctipes,Diptera,GCA_001014845.1,41811,7147,Chaoboridae
+1577624,Eutreta diana,Diptera,GCA_001015115.1,7211,7147,Tephritidae
+1582032,Trupanea jonesi,Diptera,GCA_001014665.1,7211,7147,Tephritidae
+1629725,Oryctes borbonicus,Coleoptera,GCA_001443705.1,7055,7041,Scarabaeidae
+166361,Onthophagus taurus,Coleoptera,GCA_000648695.1,7055,7041,Scarabaeidae
+166423,Melipona quadrifasciata,Hymenoptera,GCA_001276565.1,7458,7399,Apidae
+168631,Chilo suppressalis,Lepidoptera,GCA_000636095.1,268499,7088,Crambidae
+170625,Coboldia fuscipes,Diptera,GCA_001014335.1,52749,7147,Scatopsidae
+1717472,Proctacanthus coquilletti,Diptera,GCA_001932985.1,50673,7147,Asilidae
+171917,Heliconius melpomene melpomene,Lepidoptera,GCA_000326025.1,33415,7088,Nymphalidae
+174628,Bactrocera latifrons,Diptera,GCF_001853355.1,7211,7147,Tephritidae
+177089,Maconellicoccus hirsutus,Hemiptera,GCA_900064465.1,30190,7524,Pseudococcidae
+178035,Dufourea novaeangliae,Hymenoptera,GCF_001272555.1,77572,7399,Halictidae
+180454,Anopheles gambiae str. PEST,Diptera,GCA_000005575.1,7157,7147,Culicidae
+185578,Anopheles nili,Diptera,GCA_000439205.1,7157,7147,Culicidae
+189839,Baetis rhodani,Ephemeroptera,GCA_001676355.1,172515,30073,Baetidae
+197043,Homalodisca vitripennis,Hemiptera,GCA_000696855.1,30102,7524,Cicadellidae
+198433,Liriomyza trifolii,Diptera,GCA_001014935.1,127399,7147,Agromyzidae
+199890,Anopheles epiroticus,Diptera,GCA_000349105.1,7157,7147,Culicidae
+201502,Glossina fuscipes fuscipes,Diptera,GCA_000671735.1,7392,7147,Glossinidae
+204567,Chaoborus trivitattus,Diptera,GCA_001014815.1,41811,7147,Chaoboridae
+211228,Cephus cinctus,Hymenoptera,GCF_000341935.1,27524,7399,Cephidae
+217443,Cotesia vestalis,Hymenoptera,GCA_001675545.1,7402,7399,Braconidae
+217634,Anoplophora glabripennis,Coleoptera,GCF_000390285.1,34667,7041,Cerambycidae
+219809,Pseudomyrmex gracilis,Hymenoptera,GCF_002006095.1,36668,7399,Formicidae
+222816,Orussus abietinus,Hymenoptera,GCF_000612105.1,27528,7399,Orussidae
+223228,Ferrisia virgata,Hemiptera,GCA_900060175.1,30190,7524,Pseudococcidae
+224129,Agrilus planipennis,Coleoptera,GCF_000699045.1,50527,7041,Buprestidae
+248310,Heliconius melpomene malleti,Lepidoptera,GCA_001510935.1,33415,7088,Nymphalidae
+248311,Heliconius melpomene aglaope,Lepidoptera,GCA_001486105.1,33415,7088,Nymphalidae
+248312,Heliconius melpomene amaryllis,Lepidoptera,GCA_001486145.1,33415,7088,Nymphalidae
+252483,Paracoccus marginatus,Hemiptera,GCA_900065295.1,30190,7524,Pseudococcidae
+27457,Bactrocera dorsalis,Diptera,GCF_000789215.1,7211,7147,Tephritidae
+28584,Drosophila suzukii,Diptera,GCF_000472105.1,7214,7147,Drosophilidae
+28588,Bactrocera cucurbitae,Diptera,GCF_000806345.1,7211,7147,Tephritidae
+28612,Rhagoletis zephyria,Diptera,GCF_001687245.1,7211,7147,Tephritidae
+286706,Halyomorpha halys,Hemiptera,GCF_000696795.1,160513,7524,Pentatomidae
+29029,Drosophila eugracilis,Diptera,GCF_000236325.1,7214,7147,Drosophilidae
+29030,Drosophila takahashii,Diptera,GCF_000224235.1,7214,7147,Drosophilidae
+29031,Phlebotomus papatasi,Diptera,GCA_000262795.1,7197,7147,Psychodidae
+29053,Copidosoma floridanum,Hymenoptera,GCF_000648655.1,29051,7399,Encyrtidae
+292402,Themira minor,Diptera,GCA_001014575.1,137503,7147,Sepsidae
+30019,Drosophila busckii,Diptera,GCF_001277935.1,7214,7147,Drosophilidae
+30023,Drosophila elegans,Diptera,GCF_000224195.1,7214,7147,Drosophilidae
+30025,Drosophila ficusphila,Diptera,GCF_000220665.1,7214,7147,Drosophilidae
+30033,Drosophila kikkawai,Diptera,GCF_000224215.1,7214,7147,Drosophilidae
+30065,Anopheles koliensis,Diptera,GCA_000956275.1,7157,7147,Culicidae
+30066,Anopheles merus,Diptera,GCA_000473845.2,7157,7147,Culicidae
+30068,Anopheles punctulatus,Diptera,GCA_000956255.1,7157,7147,Culicidae
+30069,Anopheles stephensi,Diptera,GCA_000349045.1,7157,7147,Culicidae
+30195,Bombus terrestris,Hymenoptera,GCF_000214255.1,7458,7399,Apidae
+307658,Monomorium pharaonis,Hymenoptera,GCF_000980195.1,36668,7399,Formicidae
+312236,Tipula oleracea,Diptera,GCA_001017535.1,41042,7147,Tipulidae
+315563,Belgica antarctica,Diptera,GCA_000775305.1,7149,7147,Chironomidae
+315576,Chironomus riparius,Diptera,GCA_001014505.1,7149,7147,Chironomidae
+326594,Ceratosolen solmsi marchali,Hymenoptera,GCA_000503995.1,75187,7399,Agaonidae
+328831,Heliconius cydno cordula,Lepidoptera,GCA_001485865.1,33415,7088,Nymphalidae
+33418,Heliconius ethilla,Lepidoptera,GCA_001485905.1,33415,7088,Nymphalidae
+33427,Heliconius ismenius,Lepidoptera,GCA_001485965.1,33415,7088,Nymphalidae
+33444,Heliconius elevatus,Lepidoptera,GCA_001486085.1,33415,7088,Nymphalidae
+343691,Hermetia illucens,Diptera,GCA_001014895.1,34687,7147,Stratiomyidae
+346610,Apis mellifera intermissa,Hymenoptera,GCA_000819425.1,7458,7399,Apidae
+34690,Anopheles melas,Diptera,GCA_000473525.2,7157,7147,Culicidae
+34691,Anopheles quadriannulatus,Diptera,GCA_000349065.1,7157,7147,Culicidae
+34720,Trachymyrmex septentrionalis,Hymenoptera,GCF_001594115.1,36668,7399,Formicidae
+35570,Stomoxys calcitrans,Diptera,GCF_001015335.1,7366,7147,Muscidae
+36166,Megaselia scalaris,Diptera,GCA_000341915.2,36164,7147,Phoridae
+37001,Glossina brevipalpis,Diptera,GCA_000671755.1,7392,7147,Glossinidae
+37344,Athalia rosae,Hymenoptera,GCF_000344095.1,27532,7399,Tenthredinidae
+37546,Glossina morsitans morsitans,Diptera,GCA_001077435.1,7392,7147,Glossinidae
+38123,Pachypsylla venusta,Hemiptera,GCA_000695645.1,30092,7524,Psyllidae
+39758,Mayetiola destructor,Diptera,GCA_001014435.1,33406,7147,Cecidomyiidae
+40077,Phoebis sennae,Lepidoptera,GCA_001586405.1,7114,7088,Pieridae
+40366,Drosophila americana,Diptera,GCA_001245305.1,7214,7147,Drosophilidae
+411798,Vollenhovia emeryi,Hymenoptera,GCF_000949405.1,36668,7399,Formicidae
+41427,Anopheles atroparvus,Diptera,GCA_000473505.1,7157,7147,Culicidae
+42026,Drosophila bipectinata,Diptera,GCF_000236285.1,7214,7147,Drosophilidae
+43041,Anopheles christyi,Diptera,GCA_000349165.1,7157,7147,Culicidae
+43151,Anopheles darlingi,Diptera,GCA_000211455.3,7157,7147,Culicidae
+437484,Piezodorus guildinii,Hemiptera,GCA_000786065.1,160513,7524,Pentatomidae
+438503,Catajapyx aquilonaris,Diplura,GCA_000934665.1,79735,1652078,Japygidae
+441047,Heliconius ethilla aerotome,Lepidoptera,GCA_001485785.1,33415,7088,Nymphalidae
+441921,Neodiprion lecontei,Hymenoptera,GCF_001263575.1,52632,7399,Diprionidae
+443821,Cerapachys biroi,Hymenoptera,GCF_000611835.1,36668,7399,Formicidae
+454923,Diachasma alloeum,Hymenoptera,GCF_001412515.1,7402,7399,Braconidae
+456900,Cyphomyrmex costatus,Hymenoptera,GCF_001594065.1,36668,7399,Formicidae
+45779,Papilio glaucus,Lepidoptera,GCA_000931545.1,7143,7088,Papilionidae
+462259,Phortica variegata,Diptera,GCA_001014415.1,7214,7147,Drosophilidae
+46245,Drosophila pseudoobscura pseudoobscura,Diptera,GCA_000149495.1,7214,7147,Drosophilidae
+471704,Trachymyrmex cornetzi,Hymenoptera,GCF_001594075.1,36668,7399,Formicidae
+48709,Orchesella cincta,Collembola,GCA_001718145.1,48704,1652077,Entomobryidae
+490976,Trabutina mannipara,Hemiptera,GCA_900080175.1,30190,7524,Pseudococcidae
+50550,Priacma serrata,Coleoptera,GCA_000281835.1,50548,7041,Cupedidae
+51655,Plutella xylostella,Lepidoptera,GCF_000330985.1,51653,7088,Plutellidae
+516756,Eufriesea mexicana,Hymenoptera,GCF_001483705.1,7458,7399,Apidae
+520822,Atta colombica,Hymenoptera,GCF_001594045.1,36668,7399,Formicidae
+552050,Isoperla grammatica,Plecoptera,GCA_001676475.1,50623,50622,Perlodidae
+56086,Gerris buenoi,Hemiptera,GCA_001010745.1,36161,7524,Gerridae
+568069,Clunio marinus,Diptera,GCA_900005825.1,7149,7147,Chironomidae
+57062,Hypothenemus hampei,Coleoptera,GCA_001012855.1,7042,7041,Curculionidae
+573616,Heliconius timareta ssp. NG-2008,Lepidoptera,GCA_001486645.1,33415,7088,Nymphalidae
+573617,Heliconius timareta timareta,Lepidoptera,GCA_001486465.1,33415,7088,Nymphalidae
+59191,Anopheles farauti No. 4,Diptera,GCA_000956215.1,7157,7147,Culicidae
+594049,Tephritis californica,Diptera,GCA_001017515.1,7211,7147,Tephritidae
+597456,Habropoda laboriosa,Hymenoptera,GCF_001263275.1,7458,7399,Apidae
+59916,Bactrocera tryoni,Diptera,GCA_000695345.1,7211,7147,Tephritidae
+609295,Dinoponera quadriceps,Hymenoptera,GCF_001313825.1,36668,7399,Formicidae
+610380,Harpegnathos saltator,Hymenoptera,GCF_000147195.1,36668,7399,Formicidae
+61476,Timema cristinae,Phasmatodea,GCA_002009905.2,213546,7020,Timematidae
+62324,Anopheles funestus,Diptera,GCA_000349085.1,7157,7147,Culicidae
+63434,Leptopilina clavipes,Hymenoptera,GCA_001855655.1,44353,7399,Figitidae
+64459,Pieris rapae,Lepidoptera,GCA_001856805.1,7114,7088,Pieridae
+64791,Trachymyrmex zeteki,Hymenoptera,GCF_001594055.1,36668,7399,Formicidae
+64793,Wasmannia auropunctata,Hymenoptera,GCF_000956235.1,36668,7399,Formicidae
+64838,Fopius arisanus,Hymenoptera,GCF_000806365.1,7402,7399,Braconidae
+66420,Papilio xuthus,Lepidoptera,GCF_000836235.1,7143,7088,Papilionidae
+67767,Lasius niger,Hymenoptera,GCA_001045655.1,36668,7399,Formicidae
+67801,Glossina palpalis gambiensis,Diptera,GCA_000818775.1,7392,7147,Glossinidae
+680683,Amyelois transitella,Lepidoptera,GCF_001186105.1,7135,7088,Pyralidae
+69004,Anopheles farauti,Diptera,GCA_000956265.1,7157,7147,Culicidae
+691633,Calycopis cecrops,Lepidoptera,GCA_001625245.1,27544,7088,Lycaenidae
+691651,Lerema accius,Lepidoptera,GCA_001278395.1,40093,7088,Hesperiidae
+69319,Microplitis demolitor,Hymenoptera,GCF_000572035.2,7402,7399,Braconidae
+6973,Blattella germanica,Blattodea,GCA_000762945.1,1049651,85823,Ectobiidae
+7004,Locusta migratoria,Orthoptera,GCA_000516895.1,7002,6993,Acrididae
+7029,Acyrthosiphon pisum,Hemiptera,GCF_000142985.2,27482,7524,Aphididae
+7038,Bemisia tabaci,Hemiptera,GCF_001854935.1,7036,7524,Aleyrodidae
+7070,Tribolium castaneum,Coleoptera,GCF_000002335.3,7065,7041,Tenebrionidae
+7091,Bombyx mori,Lepidoptera,GCF_000151625.1,7089,7088,Bombycidae
+7108,Spodoptera frugiperda,Lepidoptera,GCA_000753635.2,7100,7088,Noctuidae
+7130,Manduca sexta,Lepidoptera,GCA_000262585.1,7128,7088,Sphingidae
+7153,Chironomus tentans,Diptera,GCA_000786525.1,7149,7147,Chironomidae
+7159,Aedes aegypti,Diptera,GCF_000004015.4,7157,7147,Culicidae
+7160,Aedes albopictus,Diptera,GCF_001876365.2,7157,7147,Culicidae
+7165,Anopheles gambiae str. PEST,Diptera,GCF_000005575.2,7157,7147,Culicidae
+7167,Anopheles albimanus,Diptera,GCA_000349125.1,7157,7147,Culicidae
+7168,Anopheles dirus,Diptera,GCA_000349145.1,7157,7147,Culicidae
+7173,Anopheles arabiensis,Diptera,GCA_000349185.1,7157,7147,Culicidae
+7176,Culex quinquefasciatus,Diptera,GCF_000209185.1,7157,7147,Culicidae
+7200,Lutzomyia longipalpis,Diptera,GCA_000265325.1,7197,7147,Psychodidae
+7213,Ceratitis capitata,Diptera,GCF_000347755.2,7211,7147,Tephritidae
+7217,Drosophila ananassae,Diptera,GCF_000005115.1,7214,7147,Drosophilidae
+7220,Drosophila erecta,Diptera,GCF_000005135.1,7214,7147,Drosophilidae
+7222,Drosophila grimshawi,Diptera,GCF_000005155.2,7214,7147,Drosophilidae
+7225,Scaptodrosophila lebanonensis,Diptera,GCA_001014445.1,7214,7147,Drosophilidae
+7227,Drosophila melanogaster,Diptera,GCF_000001215.4,7214,7147,Drosophilidae
+7229,Drosophila miranda,Diptera,GCF_000269505.1,7214,7147,Drosophilidae
+7230,Drosophila mojavensis,Diptera,GCF_000005175.2,7214,7147,Drosophilidae
+7232,Drosophila navojoa,Diptera,GCF_001654015.1,7214,7147,Drosophilidae
+7234,Drosophila persimilis,Diptera,GCF_000005195.2,7214,7147,Drosophilidae
+7237,Drosophila pseudoobscura pseudoobscura,Diptera,GCF_000001765.3,7214,7147,Drosophilidae
+7238,Drosophila sechellia,Diptera,GCF_000005215.3,7214,7147,Drosophilidae
+7240,Drosophila simulans,Diptera,GCF_000754195.2,7214,7147,Drosophilidae
+7244,Drosophila virilis,Diptera,GCF_000005245.1,7214,7147,Drosophilidae
+7245,Drosophila yakuba,Diptera,GCF_000005975.2,7214,7147,Drosophilidae
+7260,Drosophila willistoni,Diptera,GCF_000005925.1,7214,7147,Drosophilidae
+7263,Drosophila arizonae,Diptera,GCF_001654025.1,7214,7147,Drosophilidae
+7291,Drosophila albomicans,Diptera,GCA_001014995.1,7214,7147,Drosophilidae
+7370,Musca domestica,Diptera,GCF_000371365.1,7366,7147,Muscidae
+7373,Calliphora vicina,Diptera,GCA_001017275.1,7371,7147,Calliphoridae
+7375,Lucilia cuprina,Diptera,GCA_000699065.1,7371,7147,Calliphoridae
+7380,Phormia regina,Diptera,GCA_001735585.1,7371,7147,Calliphoridae
+7385,Neobellieria bullata,Diptera,GCA_001017455.1,7381,7147,Sarcophagidae
+7394,Glossina morsitans,Diptera,GCA_001014515.1,7392,7147,Glossinidae
+7395,Glossina austeni,Diptera,GCA_000688735.1,7392,7147,Glossinidae
+7398,Glossina pallidipes,Diptera,GCA_000688715.1,7392,7147,Glossinidae
+7425,Nasonia vitripennis,Hymenoptera,GCF_000002325.3,7423,7399,Pteromalidae
+7426,Nasonia giraulti,Hymenoptera,GCA_000004775.1,7423,7399,Pteromalidae
+7427,Nasonia longicornis,Hymenoptera,GCA_000004795.1,7423,7399,Pteromalidae
+743375,Polistes dominula,Hymenoptera,GCF_001465965.1,7438,7399,Vespidae
+7460,Apis mellifera,Hymenoptera,GCF_000002195.4,7458,7399,Apidae
+7461,Apis cerana,Hymenoptera,GCF_001442555.1,7458,7399,Apidae
+7462,Apis dorsata,Hymenoptera,GCF_000469605.1,7458,7399,Apidae
+7463,Apis florea,Hymenoptera,GCF_000184785.2,7458,7399,Apidae
+74869,Anopheles maculatus,Diptera,GCA_000473185.1,7157,7147,Culicidae
+74873,Anopheles sinensis,Diptera,GCA_000472065.2,7157,7147,Culicidae
+7493,Trichogramma pretiosum,Hymenoptera,GCF_000599845.1,7489,7399,Trichogrammatidae
+7536,Oncopeltus fasciatus,Hemiptera,GCA_000696205.1,7533,7524,Lygaeidae
+7539,Leptinotarsa decemlineata,Coleoptera,GCA_000500325.1,27439,7041,Chrysomelidae
+757355,Cimex hemipterus,Hemiptera,GCA_001663875.1,30078,7524,Cimicidae
+76193,Papilio machaon,Lepidoptera,GCF_001298355.1,7143,7088,Papilionidae
+76194,Papilio polytes,Lepidoptera,GCF_000836215.1,7143,7088,Papilionidae
+765876,Dactylopius coccus,Hemiptera,GCA_000833685.1,38115,7524,Dactylopiidae
+76712,Zaprionus indianus,Diptera,GCA_001752445.1,7214,7147,Drosophilidae
+77166,Dendroctonus ponderosae,Coleoptera,GCF_000355655.1,7042,7041,Curculionidae
+79782,Cimex lectularius,Hemiptera,GCF_000648675.1,30078,7524,Cimicidae
+83485,Linepithema humile,Hymenoptera,GCF_000217595.1,36668,7399,Formicidae
+85120,Clogmia albipunctata,Diptera,GCA_001014945.1,7197,7147,Psychodidae
+884340,Heliconius numata silvana,Lepidoptera,GCA_001486245.1,33415,7088,Nymphalidae
+884341,Heliconius numata tarapotensis,Lepidoptera,GCA_001486745.1,33415,7088,Nymphalidae
+884342,Heliconius pardalinus sergestus,Lepidoptera,GCA_001486765.1,33415,7088,Nymphalidae
+88501,Lasioglossum albipes,Hymenoptera,GCA_000346575.1,77572,7399,Halictidae
+88686,Megaselia abdita,Diptera,GCA_001015175.1,36164,7147,Phoridae
+91411,Polistes canadensis,Hymenoptera,GCF_001313835.1,7438,7399,Vespidae

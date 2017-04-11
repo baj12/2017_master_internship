@@ -29,18 +29,20 @@ pathcsv = options.pathcsv
 genomePath = options.genomePath
 
 if pathcsv == "None":
-	print("List of genome to dowload must be provided.\n -h for more information")
+	print("List of genome to download must be provided.\n -h for more information")
 	sys.exit(1)
 
-datatofetch = pd.read_csv(pathcsv)
-gIDtofetch = datatofetch['Accession number'].values
+dataToFetch = pd.read_csv('GCA_GCF_insectGenomes.csv')
 
-if not os.path.isdir(os.path.join(genomePath, 'AllGenomes')):
-	os.mkdir(os.path.join(genomePath, 'AllGenomes'))
+organismToFetch = []
+for index in dataToFetch.index :
+    if 'GCF' in dataToFetch['genome_id'][index] :
+        organismToFetch.append(dataToFetch['sp_name'][index])
 
-for i in range(len(gIDtofetch)):
-	arg = re.findall("(^[A-Z]{3})_([0-9]{3})([0-9]{3})([0-9]{3})", gIDtofetch[i])[0]
-	path = os.path.join(genomePath, 'AllGenomes', ''.join(arg))
-	if not os.path.isdir(path):
-		os.mkdir(path)
-	os.system('rsync --copy-links --recursive --times --verbose rsync://ftp.ncbi.nlm.nih.gov/genomes/all/{}/{}/{}/{}/ '.format(arg[0], arg[1], arg[2], arg[3])+path)
+if not os.path.isdir(os.path.join(genomePath, 'Refseq_Genomes')):
+	os.mkdir(os.path.join(genomePath, 'Refseq_Genomes'))
+
+path = (os.path.join(genomePath, 'Refseq_Genomes'))
+for organism in organismToFetch :
+    organism = organism.split(' ')
+    os.system('rsync --copy-links --recursive --times --verbose rsync://ftp.ncbi.nlm.nih.gov/genomes/refseq/invertebrate/{}_{}/latest_assembly_versions/ {}'.format(organism[0], organism[1], path))
