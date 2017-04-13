@@ -30,3 +30,18 @@
 
 
 # Wednesday, March 12th
+
+## Done
+- [x] Comparing augustus training tests
+- [x] 20 new Oskar sequences in diptera tsa
+- [x] Counting GCF per order
+- [x] Get fasta HMM representant for Blattodea - Collembola - Orthoptera - Phasmatodea - Thysanoptera for preparing Augustus etraining input
+
+## In progress
+- Running optimize Augustus
+- Running Transcriptomes pipeline
+
+
+## To do
+- Get annotations from Maker for Blattodea - Collembola - Orthoptera - Phasmatodea - Thysanoptera for preparing Augustus etraining input
+- Get annotations of GCF genomes + fasta
