@@ -3,7 +3,7 @@ _Date : 03/10/2017_
 
 ## Task 01 : 
 - Showing the phylogenetic distribution of Oskar in insect orders
-- We also want to see if the evolution of oskar is in the same thant the evolution of insect orders
+- We also want to see if the evolution of oskar is in the same than the evolution of insect orders
 
 
 ### Sub-task 01: Update our data
