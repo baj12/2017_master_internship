@@ -12,6 +12,8 @@ in folder for running Augustus training
 '''
 
 import os, sys, re
+import subprocess
+from subprocess import Popen
 from optparse import OptionParser
 
 parser = OptionParser()
@@ -36,8 +38,30 @@ if augustusFolderPath == "None":
 genome_folder = os.listdir(refseqPath)
 
 for folder in genome_folder :
-    path = os.path.join(refseqPath, folder)
+    print('Building {} folder in progress ...'.format(folder))
+    path = os.path.join(refseqPath, folder, folder+'_genomic.fna.gz')
+    if os.path.isfile(path) :
+        if not os.path.isfile(os.path.join(refseqPath, folder, folder+'_genomic.fna')):
+            P = Popen(['gunzip',path])
+            ret = P.wait()
+            if ret != 0:
+                print("Error Gunzipping !")
 
-    file_list = os.listdir(path) :
+    path = os.path.join(refseqPath, folder, folder+'_genomic.fna')
+    if os.path.isfile(path):
+        if not os.path.isdir(os.path.join(augustusFolderPath, folder)):
+            os.mkdir(os.path.join(augustusFolderPath, folder))
+        os.system('cp {} {}'.format(path, os.path.join(augustusFolderPath, folder)))
 
-    for genomeFile in file_list :
+    path = os.path.join(refseqPath, folder, folder+'_genomic.gff.gz')
+    if os.path.isfile(path) :
+        if not os.path.isfile(os.path.join(refseqPath, folder, folder+'_genomic.gff')):
+            P = Popen(['gunzip',path])
+            ret = P.wait()
+            if ret != 0:
+                print("Error Gunzipping !")
+
+    path = os.path.join(refseqPath, folder, folder+'_genomic.gff')
+    if os.path.isfile(path):
+        path = os.path.join(refseqPath, folder, folder+'_genomic.gff')
+        os.system('cp {} {}'.format(path, os.path.join(augustusFolderPath, folder)))
