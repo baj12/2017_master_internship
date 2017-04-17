@@ -12,7 +12,9 @@ if an osk and an lotus is in the same sequence
 '''
 
 import sys, os, re
+import json
 from optparse import OptionParser
+
 parser = OptionParser()
 parser.add_option("-p", "--oskar_search_path", dest='oskar_search_path', default="None",
                   help="[Required] Location of the hmmsearch result folder")
@@ -48,16 +50,27 @@ for folder in oskar_search :
         if "#" not in line :
             orgn = re.findall(r'TSA: ([A-Za-z]* [a-z]*)',line)[0]
             line = line.split('-')
-            osk_idList.append(line[0])
+            osk_idList.append(re.findall(r'[A-Z]{4}[0-9]{8}.[0-9]{1}_[0-9]{1})',line[0]))
 
     lotus_idList = []
     for line in lotusLines[3:] :
         if "#" not in line :
             line = line.split('-')
-            lotus_idList.append(line[0])
+            lotus_idList.append(re.findall(r'[A-Z]{4}[0-9]{8}.[0-9]{1}_[0-9]{1})',line[0]))
 
     tsa = re.findall(r'^([A-Z]{4}.[0-9]{1})',osk)[0]
 
+    '''
+    for line in alldata[1:] :
+        line = line.split('\t')
+        tsaDict[line[2]] = line[3]
+    '''
+
+
+    data = {}
+    data['metadata'] = []
+    data['metadata'].append( {
+    })
     if len(osk_idList) == 0 and len(lotus_idList) == 0 :
         withoutOskar += 1
         oskarDict[tsa] = {}
