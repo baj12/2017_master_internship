@@ -15,12 +15,13 @@ which be after running to execute Maker
 import os, sys
 import re
 
-for folder in os.listdir('/n/extavour_lab/Lab/Everyone/savy/Maker'):
-        f = open('{}/{}/{}.sh'.format('/n/extavour_lab/Lab/Everyone/savy/Maker',folder,folder),'w')
+for folder in os.listdir('/n/regal/extavour_lab/savy/augustus_training'):
+        f = open('{}/{}/{}.sh'.format('/n/regal/extavour_lab/savy/augustus_training',folder,folder),'w')
         f.write('#!/bin/bash\n#\n')
         f.write('#SBATCH -J {} \n'.format(folder))
         f.write('''#SBATCH -n 32 # Number of cores
 #SBATCH -p general # Partition
+#SBATCH -t 7-0:00 # Maximum execution time (D-HH:MM)
 #SBATCH --mem 16000 # Memory request
 #SBATCH -o maker.out # Standard output
 #SBATCH -e maker.err # Standard error
